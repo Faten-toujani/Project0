@@ -1,0 +1,14 @@
+{
+  "item_id": "t2-09",
+  "tier": 2,
+  "split": "test",
+  "model_key": "local",
+  "model_name": "qwen2.5-coder:3b",
+  "timestamp": "2026-09-13T14:14:20.809408+00:00",
+  "prompt_chars": 2377,
+  "output": "SELECT COUNT(DISTINCT member_id) FROM payment WHERE member_id IN (SELECT member_id FROM member WHERE joined_on LIKE '2025%')",
+  "input_tokens": 533,
+  "output_tokens": 32,
+  "error": null,
+  "latency_ms": 3337.7
+}

@@ -1,0 +1,14 @@
+{
+  "item_id": "t1-17",
+  "tier": 1,
+  "split": "test",
+  "model_key": "opus",
+  "model_name": "claude-opus-5",
+  "timestamp": "2026-09-13T14:10:36.859536+00:00",
+  "prompt_chars": 2349,
+  "output": "SELECT COUNT(*) FROM trip WHERE distance_km > 15;",
+  "input_tokens": 1126,
+  "output_tokens": 30,
+  "error": null,
+  "latency_ms": 1768.4
+}

@@ -1,0 +1,14 @@
+{
+  "item_id": "t3-06",
+  "tier": 3,
+  "split": "test",
+  "model_key": "opus",
+  "model_name": "claude-opus-5",
+  "timestamp": "2026-09-13T14:11:46.887629+00:00",
+  "prompt_chars": 2439,
+  "output": "ROUND(100.0 * COUNT(DISTINCT t.member_id) / COUNT(DISTINCT m.member_id), 1)\n\nNeed LEFT JOIN so plans with no members show... division by zero yields NULL in SQLite, fine.\n\n```sql\nSELECT p.name,\n       ROUND(100.0 * COUNT(DISTINCT t.member_id) / COUNT(DISTINCT m.member_id), 1) AS pct_members_with_trip\nFROM plan p\nLEFT JOIN member m ON m.plan_id = p.plan_id\nLEFT JOIN trip t ON t.member_id = m.member_id\nGROUP BY p.plan_id, p.name\n```",
+  "input_tokens": 1153,
+  "output_tokens": 238,
+  "error": null,
+  "latency_ms": 3912.3
+}

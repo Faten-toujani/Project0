@@ -1,0 +1,14 @@
+{
+  "item_id": "t2-14",
+  "tier": 2,
+  "split": "test",
+  "model_key": "opus",
+  "model_name": "claude-opus-5",
+  "timestamp": "2026-09-13T14:11:15.497104+00:00",
+  "prompt_chars": 2400,
+  "output": "```sql\nSELECT member_id, SUM(amount) AS total_paid\nFROM payment\nGROUP BY member_id\nHAVING SUM(amount) > 300;\n```",
+  "input_tokens": 1139,
+  "output_tokens": 61,
+  "error": null,
+  "latency_ms": 2439.9
+}

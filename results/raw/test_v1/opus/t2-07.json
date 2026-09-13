@@ -1,0 +1,14 @@
+{
+  "item_id": "t2-07",
+  "tier": 2,
+  "split": "test",
+  "model_key": "opus",
+  "model_name": "claude-opus-5",
+  "timestamp": "2026-09-13T14:10:59.168761+00:00",
+  "prompt_chars": 2386,
+  "output": "SELECT city, COUNT(*) AS station_count FROM station GROUP BY city HAVING COUNT(*) > 2;",
+  "input_tokens": 1135,
+  "output_tokens": 46,
+  "error": null,
+  "latency_ms": 2210.9
+}

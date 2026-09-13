@@ -1,0 +1,14 @@
+{
+  "item_id": "t1-08",
+  "tier": 1,
+  "split": "test",
+  "model_key": "haiku",
+  "model_name": "claude-haiku-4-5-20251001",
+  "timestamp": "2026-09-13T14:12:06.930456+00:00",
+  "prompt_chars": 2377,
+  "output": "SELECT DISTINCT method FROM payment;",
+  "input_tokens": 634,
+  "output_tokens": 10,
+  "error": null,
+  "latency_ms": 795.0
+}

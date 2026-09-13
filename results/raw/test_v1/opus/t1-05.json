@@ -1,0 +1,14 @@
+{
+  "item_id": "t1-05",
+  "tier": 1,
+  "split": "test",
+  "model_key": "opus",
+  "model_name": "claude-opus-5",
+  "timestamp": "2026-09-13T14:10:11.341822+00:00",
+  "prompt_chars": 2342,
+  "output": "SELECT COUNT(*) FROM member WHERE joined_on >= '2025-01-01' AND joined_on < '2026-01-01';",
+  "input_tokens": 1123,
+  "output_tokens": 50,
+  "error": null,
+  "latency_ms": 2270.8
+}

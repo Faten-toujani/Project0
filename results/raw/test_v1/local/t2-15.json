@@ -1,0 +1,14 @@
+{
+  "item_id": "t2-15",
+  "tier": 2,
+  "split": "test",
+  "model_key": "local",
+  "model_name": "qwen2.5-coder:3b",
+  "timestamp": "2026-09-13T14:14:41.766596+00:00",
+  "prompt_chars": 2406,
+  "output": "SELECT strftime('%Y-%m', started_at) AS month, COUNT(*) AS trip_count FROM trip WHERE strftime('%Y', started_at) = '2025' GROUP BY month",
+  "input_tokens": 541,
+  "output_tokens": 39,
+  "error": null,
+  "latency_ms": 3502.0
+}

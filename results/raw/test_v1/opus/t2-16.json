@@ -1,0 +1,14 @@
+{
+  "item_id": "t2-16",
+  "tier": 2,
+  "split": "test",
+  "model_key": "opus",
+  "model_name": "claude-opus-5",
+  "timestamp": "2026-09-13T14:11:20.145620+00:00",
+  "prompt_chars": 2407,
+  "output": "SELECT DISTINCT s.name, s.city FROM station s JOIN bike b ON b.station_id = s.station_id WHERE b.status = 'maintenance';",
+  "input_tokens": 1140,
+  "output_tokens": 59,
+  "error": null,
+  "latency_ms": 2223.2
+}

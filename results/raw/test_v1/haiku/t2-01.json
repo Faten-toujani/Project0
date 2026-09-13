@@ -1,0 +1,14 @@
+{
+  "item_id": "t2-01",
+  "tier": 2,
+  "split": "test",
+  "model_key": "haiku",
+  "model_name": "claude-haiku-4-5-20251001",
+  "timestamp": "2026-09-13T14:12:17.183690+00:00",
+  "prompt_chars": 2436,
+  "output": "SELECT s.name, COUNT(b.bike_id) as bike_count FROM station s LEFT JOIN bike b ON s.station_id = b.station_id GROUP BY s.station_id, s.name ORDER BY s.station_id;",
+  "input_tokens": 647,
+  "output_tokens": 58,
+  "error": null,
+  "latency_ms": 1093.2
+}

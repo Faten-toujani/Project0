@@ -1,0 +1,14 @@
+{
+  "item_id": "t1-06",
+  "tier": 1,
+  "split": "test",
+  "model_key": "opus",
+  "model_name": "claude-opus-5",
+  "timestamp": "2026-09-13T14:10:13.614666+00:00",
+  "prompt_chars": 2381,
+  "output": "SELECT name, capacity FROM station ORDER BY capacity DESC LIMIT 1;",
+  "input_tokens": 1132,
+  "output_tokens": 35,
+  "error": null,
+  "latency_ms": 2126.0
+}

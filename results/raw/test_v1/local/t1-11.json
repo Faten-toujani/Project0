@@ -1,0 +1,14 @@
+{
+  "item_id": "t1-11",
+  "tier": 1,
+  "split": "test",
+  "model_key": "local",
+  "model_name": "qwen2.5-coder:3b",
+  "timestamp": "2026-09-13T14:13:24.270752+00:00",
+  "prompt_chars": 2379,
+  "output": "SELECT ROUND(AVG(distance_km), 2) FROM trip",
+  "input_tokens": 531,
+  "output_tokens": 13,
+  "error": null,
+  "latency_ms": 2888.5
+}

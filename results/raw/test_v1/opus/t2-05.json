@@ -1,0 +1,14 @@
+{
+  "item_id": "t2-05",
+  "tier": 2,
+  "split": "test",
+  "model_key": "opus",
+  "model_name": "claude-opus-5",
+  "timestamp": "2026-09-13T14:10:53.697023+00:00",
+  "prompt_chars": 2383,
+  "output": "SELECT COUNT(*) FROM trip WHERE end_station_id IS NOT NULL AND end_station_id <> start_station_id;",
+  "input_tokens": 1130,
+  "output_tokens": 50,
+  "error": null,
+  "latency_ms": 2363.6
+}

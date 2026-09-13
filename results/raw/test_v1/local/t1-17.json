@@ -1,0 +1,14 @@
+{
+  "item_id": "t1-17",
+  "tier": 1,
+  "split": "test",
+  "model_key": "local",
+  "model_name": "qwen2.5-coder:3b",
+  "timestamp": "2026-09-13T14:13:41.844311+00:00",
+  "prompt_chars": 2349,
+  "output": "SELECT COUNT(trip_id) FROM trip WHERE distance_km > 15",
+  "input_tokens": 526,
+  "output_tokens": 16,
+  "error": null,
+  "latency_ms": 2894.3
+}

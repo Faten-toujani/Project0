@@ -1,0 +1,14 @@
+{
+  "item_id": "t3-08",
+  "tier": 3,
+  "split": "test",
+  "model_key": "haiku",
+  "model_name": "claude-haiku-4-5-20251001",
+  "timestamp": "2026-09-13T14:12:45.771455+00:00",
+  "prompt_chars": 2406,
+  "output": "SELECT DISTINCT m.member_id FROM member m WHERE m.member_id IN (SELECT DISTINCT member_id FROM payment) AND m.member_id NOT IN (SELECT DISTINCT member_id FROM trip);",
+  "input_tokens": 644,
+  "output_tokens": 49,
+  "error": null,
+  "latency_ms": 1104.4
+}

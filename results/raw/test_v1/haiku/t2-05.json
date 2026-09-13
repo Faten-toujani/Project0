@@ -1,0 +1,14 @@
+{
+  "item_id": "t2-05",
+  "tier": 2,
+  "split": "test",
+  "model_key": "haiku",
+  "model_name": "claude-haiku-4-5-20251001",
+  "timestamp": "2026-09-13T14:12:22.323911+00:00",
+  "prompt_chars": 2383,
+  "output": "SELECT COUNT(*) FROM trip WHERE start_station_id != end_station_id;",
+  "input_tokens": 637,
+  "output_tokens": 22,
+  "error": null,
+  "latency_ms": 850.5
+}

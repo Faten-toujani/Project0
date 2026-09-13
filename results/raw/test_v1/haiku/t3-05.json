@@ -1,0 +1,14 @@
+{
+  "item_id": "t3-05",
+  "tier": 3,
+  "split": "test",
+  "model_key": "haiku",
+  "model_name": "claude-haiku-4-5-20251001",
+  "timestamp": "2026-09-13T14:12:43.027153+00:00",
+  "prompt_chars": 2394,
+  "output": "SELECT bike_id FROM maintenance WHERE resolved_on IS NULL GROUP BY bike_id HAVING COUNT(*) > 1;",
+  "input_tokens": 641,
+  "output_tokens": 29,
+  "error": null,
+  "latency_ms": 781.4
+}

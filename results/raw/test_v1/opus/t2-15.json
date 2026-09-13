@@ -1,0 +1,14 @@
+{
+  "item_id": "t2-15",
+  "tier": 2,
+  "split": "test",
+  "model_key": "opus",
+  "model_name": "claude-opus-5",
+  "timestamp": "2026-09-13T14:11:17.937999+00:00",
+  "prompt_chars": 2406,
+  "output": "strftime('%Y-%m', started_at) AS month, COUNT(*) AS trip_count FROM trip WHERE started_at >= '2025-01-01' AND started_at < '2026-01-01' GROUP BY month ORDER BY month",
+  "input_tokens": 1145,
+  "output_tokens": 84,
+  "error": null,
+  "latency_ms": 2206.8
+}

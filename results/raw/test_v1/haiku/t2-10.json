@@ -1,0 +1,14 @@
+{
+  "item_id": "t2-10",
+  "tier": 2,
+  "split": "test",
+  "model_key": "haiku",
+  "model_name": "claude-haiku-4-5-20251001",
+  "timestamp": "2026-09-13T14:12:27.231605+00:00",
+  "prompt_chars": 2391,
+  "output": "SELECT s.name FROM station s WHERE s.station_id = (SELECT start_station_id FROM trip GROUP BY start_station_id ORDER BY COUNT(*) DESC LIMIT 1);",
+  "input_tokens": 638,
+  "output_tokens": 44,
+  "error": null,
+  "latency_ms": 846.4
+}

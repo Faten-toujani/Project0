@@ -1,0 +1,14 @@
+{
+  "item_id": "t1-10",
+  "tier": 1,
+  "split": "test",
+  "model_key": "opus",
+  "model_name": "claude-opus-5",
+  "timestamp": "2026-09-13T14:10:21.656342+00:00",
+  "prompt_chars": 2344,
+  "output": "SELECT COUNT(*) FROM member WHERE city = 'Toulouse';",
+  "input_tokens": 1124,
+  "output_tokens": 31,
+  "error": null,
+  "latency_ms": 1979.2
+}

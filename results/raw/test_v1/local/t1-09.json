@@ -1,0 +1,14 @@
+{
+  "item_id": "t1-09",
+  "tier": 1,
+  "split": "test",
+  "model_key": "local",
+  "model_name": "qwen2.5-coder:3b",
+  "timestamp": "2026-09-13T14:13:18.261306+00:00",
+  "prompt_chars": 2362,
+  "output": "SELECT COUNT(bike_id) FROM bike WHERE purchased_on < '2024-01-01'",
+  "input_tokens": 530,
+  "output_tokens": 25,
+  "error": null,
+  "latency_ms": 3122.7
+}

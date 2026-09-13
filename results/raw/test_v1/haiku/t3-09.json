@@ -1,0 +1,14 @@
+{
+  "item_id": "t3-09",
+  "tier": 3,
+  "split": "test",
+  "model_key": "haiku",
+  "model_name": "claude-haiku-4-5-20251001",
+  "timestamp": "2026-09-13T14:12:46.876749+00:00",
+  "prompt_chars": 2503,
+  "output": "SELECT s.name, MAX(julianday(m.resolved_on) - julianday(m.reported_on)) as longest_days\nFROM station s\nJOIN bike b ON s.station_id = b.station_id\nJOIN maintenance m ON b.bike_id = m.bike_id\nWHERE m.resolved_on IS NOT NULL\nGROUP BY s.station_id, s.name;",
+  "input_tokens": 659,
+  "output_tokens": 94,
+  "error": null,
+  "latency_ms": 1206.0
+}

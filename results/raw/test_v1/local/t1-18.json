@@ -1,0 +1,14 @@
+{
+  "item_id": "t1-18",
+  "tier": 1,
+  "split": "test",
+  "model_key": "local",
+  "model_name": "qwen2.5-coder:3b",
+  "timestamp": "2026-09-13T14:13:44.739239+00:00",
+  "prompt_chars": 2355,
+  "output": "SELECT COUNT(member_id) FROM member WHERE referred_by IS NULL",
+  "input_tokens": 524,
+  "output_tokens": 13,
+  "error": null,
+  "latency_ms": 2900.9
+}

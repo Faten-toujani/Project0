@@ -1,0 +1,14 @@
+{
+  "item_id": "t3-05",
+  "tier": 3,
+  "split": "test",
+  "model_key": "opus",
+  "model_name": "claude-opus-5",
+  "timestamp": "2026-09-13T14:11:44.351618+00:00",
+  "prompt_chars": 2394,
+  "output": "SELECT bike_id FROM maintenance WHERE resolved_on IS NULL GROUP BY bike_id HAVING COUNT(*) > 1;",
+  "input_tokens": 1139,
+  "output_tokens": 130,
+  "error": null,
+  "latency_ms": 2533.0
+}

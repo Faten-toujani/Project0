@@ -1,0 +1,14 @@
+{
+  "item_id": "t1-12",
+  "tier": 1,
+  "split": "test",
+  "model_key": "haiku",
+  "model_name": "claude-haiku-4-5-20251001",
+  "timestamp": "2026-09-13T14:12:10.008994+00:00",
+  "prompt_chars": 2366,
+  "output": "SELECT COUNT(*) FROM maintenance WHERE resolved_on IS NULL;",
+  "input_tokens": 632,
+  "output_tokens": 16,
+  "error": null,
+  "latency_ms": 677.7
+}

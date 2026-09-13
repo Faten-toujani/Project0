@@ -1,0 +1,14 @@
+{
+  "item_id": "t2-16",
+  "tier": 2,
+  "split": "test",
+  "model_key": "haiku",
+  "model_name": "claude-haiku-4-5-20251001",
+  "timestamp": "2026-09-13T14:12:33.493727+00:00",
+  "prompt_chars": 2407,
+  "output": "SELECT DISTINCT s.name, s.city FROM station s JOIN bike b ON s.station_id = b.station_id WHERE b.status = 'maintenance';",
+  "input_tokens": 643,
+  "output_tokens": 40,
+  "error": null,
+  "latency_ms": 841.3
+}

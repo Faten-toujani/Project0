@@ -1,0 +1,14 @@
+{
+  "item_id": "t3-07",
+  "tier": 3,
+  "split": "test",
+  "model_key": "local",
+  "model_name": "qwen2.5-coder:3b",
+  "timestamp": "2026-09-13T14:15:24.198673+00:00",
+  "prompt_chars": 2388,
+  "output": "SELECT name, capacity FROM station ORDER BY capacity DESC LIMIT 1 OFFSET 1",
+  "input_tokens": 530,
+  "output_tokens": 17,
+  "error": null,
+  "latency_ms": 2999.5
+}

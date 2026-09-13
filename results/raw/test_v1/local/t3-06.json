@@ -1,0 +1,14 @@
+{
+  "item_id": "t3-06",
+  "tier": 3,
+  "split": "test",
+  "model_key": "local",
+  "model_name": "qwen2.5-coder:3b",
+  "timestamp": "2026-09-13T14:15:20.059887+00:00",
+  "prompt_chars": 2439,
+  "output": "SELECT p.name, ROUND(COUNT(CASE WHEN m.member_id IN (SELECT member_id FROM trip) THEN 1 ELSE NULL END) * 100.0 / COUNT(m.member_id), 1) AS trip_percentage\nFROM plan p\nJOIN member m ON p.plan_id = m.plan_id\nGROUP BY p.name",
+  "input_tokens": 544,
+  "output_tokens": 69,
+  "error": null,
+  "latency_ms": 4137.9
+}

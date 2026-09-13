@@ -1,0 +1,14 @@
+{
+  "item_id": "t1-12",
+  "tier": 1,
+  "split": "test",
+  "model_key": "local",
+  "model_name": "qwen2.5-coder:3b",
+  "timestamp": "2026-09-13T14:13:27.160405+00:00",
+  "prompt_chars": 2366,
+  "output": "SELECT COUNT(*) FROM maintenance WHERE resolved_on IS NULL",
+  "input_tokens": 525,
+  "output_tokens": 11,
+  "error": null,
+  "latency_ms": 2780.5
+}

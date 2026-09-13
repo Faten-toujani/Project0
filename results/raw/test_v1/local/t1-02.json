@@ -1,0 +1,14 @@
+{
+  "item_id": "t1-02",
+  "tier": 1,
+  "split": "test",
+  "model_key": "local",
+  "model_name": "qwen2.5-coder:3b",
+  "timestamp": "2026-09-13T14:12:58.327237+00:00",
+  "prompt_chars": 2355,
+  "output": "SELECT COUNT(*) FROM bike WHERE status = 'maintenance'",
+  "input_tokens": 524,
+  "output_tokens": 12,
+  "error": null,
+  "latency_ms": 2856.4
+}

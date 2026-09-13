@@ -1,0 +1,14 @@
+{
+  "item_id": "t2-04",
+  "tier": 2,
+  "split": "test",
+  "model_key": "opus",
+  "model_name": "claude-opus-5",
+  "timestamp": "2026-09-13T14:10:51.398035+00:00",
+  "prompt_chars": 2430,
+  "output": "```sql\nSELECT s.name, ROUND(AVG(t.distance_km), 2) AS avg_distance_km\nFROM trip t\nJOIN station s ON s.station_id = t.start_station_id\nGROUP BY s.station_id, s.name;\n```",
+  "input_tokens": 1145,
+  "output_tokens": 90,
+  "error": null,
+  "latency_ms": 2295.9
+}

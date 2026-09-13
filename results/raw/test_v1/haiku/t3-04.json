@@ -1,0 +1,14 @@
+{
+  "item_id": "t3-04",
+  "tier": 3,
+  "split": "test",
+  "model_key": "haiku",
+  "model_name": "claude-haiku-4-5-20251001",
+  "timestamp": "2026-09-13T14:12:41.882463+00:00",
+  "prompt_chars": 2440,
+  "output": "SELECT model.name, ROUND(SUM(maintenance.cost) / COUNT(DISTINCT bike.bike_id), 2) AS cost_per_bike FROM model JOIN bike ON model.model_id = bike.model_id LEFT JOIN maintenance ON bike.bike_id = maintenance.bike_id GROUP BY model.model_id ORDER BY cost_per_bike DESC LIMIT 1;",
+  "input_tokens": 649,
+  "output_tokens": 89,
+  "error": null,
+  "latency_ms": 1141.9
+}

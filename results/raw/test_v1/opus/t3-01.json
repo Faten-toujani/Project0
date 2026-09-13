@@ -1,0 +1,14 @@
+{
+  "item_id": "t3-01",
+  "tier": 3,
+  "split": "test",
+  "model_key": "opus",
+  "model_name": "claude-opus-5",
+  "timestamp": "2026-09-13T14:11:31.878763+00:00",
+  "prompt_chars": 2451,
+  "output": "SELECT m.member_id, m.full_name, COUNT(r.member_id) AS referral_count\nFROM member m\nJOIN member r ON r.referred_by = m.member_id\nGROUP BY m.member_id, m.full_name\nHAVING COUNT(r.member_id) >= 3\nORDER BY referral_count DESC, m.member_id;",
+  "input_tokens": 1147,
+  "output_tokens": 130,
+  "error": null,
+  "latency_ms": 2476.6
+}

@@ -1,0 +1,14 @@
+{
+  "item_id": "t2-02",
+  "tier": 2,
+  "split": "test",
+  "model_key": "haiku",
+  "model_name": "claude-haiku-4-5-20251001",
+  "timestamp": "2026-09-13T14:12:18.279344+00:00",
+  "prompt_chars": 2385,
+  "output": "SELECT p.name, SUM(py.amount) AS total_amount\nFROM plan p\nLEFT JOIN member m ON p.plan_id = m.plan_id\nLEFT JOIN payment py ON m.member_id = py.member_id\nGROUP BY p.plan_id, p.name;",
+  "input_tokens": 639,
+  "output_tokens": 70,
+  "error": null,
+  "latency_ms": 1584.2
+}

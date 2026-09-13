@@ -1,0 +1,14 @@
+{
+  "item_id": "t1-06",
+  "tier": 1,
+  "split": "test",
+  "model_key": "haiku",
+  "model_name": "claude-haiku-4-5-20251001",
+  "timestamp": "2026-09-13T14:12:05.574333+00:00",
+  "prompt_chars": 2381,
+  "output": "SELECT name, capacity FROM station ORDER BY capacity DESC LIMIT 1;",
+  "input_tokens": 636,
+  "output_tokens": 18,
+  "error": null,
+  "latency_ms": 586.4
+}
