@@ -86,6 +86,4 @@ results/  raw/ (one JSON per call), per_item.csv, summary.csv, hardware.md
 
 ## Contributions
 
-Solo project — all work by Faten Toujani: schema and data generation, item authoring and
-validation, harness (`run.py`, `score.py`, `cost.py`), both runs, analysis, report and
-postmortem.
+Solo project 
