@@ -1,0 +1,14 @@
+{
+  "item_id": "t2-17",
+  "tier": 2,
+  "split": "test",
+  "model_key": "opus",
+  "model_name": "claude-opus-5",
+  "timestamp": "2026-09-13T14:11:22.370737+00:00",
+  "prompt_chars": 2416,
+  "output": "ROUND(AVG(p.monthly_fee), 2) ... let me write full query.\n\nSELECT ROUND(AVG(p.monthly_fee), 2) FROM member m JOIN plan p ON m.plan_id = p.plan_id WHERE m.city = 'Lille';",
+  "input_tokens": 1147,
+  "output_tokens": 98,
+  "error": null,
+  "latency_ms": 2637.2
+}

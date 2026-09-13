@@ -1,0 +1,14 @@
+{
+  "item_id": "t2-11",
+  "tier": 2,
+  "split": "test",
+  "model_key": "local",
+  "model_name": "qwen2.5-coder:3b",
+  "timestamp": "2026-09-13T14:14:27.771207+00:00",
+  "prompt_chars": 2396,
+  "output": "SELECT method, COUNT(payment_id) AS num_payments, SUM(amount) AS total_amount FROM payment GROUP BY method",
+  "input_tokens": 533,
+  "output_tokens": 23,
+  "error": null,
+  "latency_ms": 3101.2
+}

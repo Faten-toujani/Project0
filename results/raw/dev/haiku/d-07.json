@@ -1,0 +1,14 @@
+{
+  "item_id": "d-07",
+  "tier": 2,
+  "split": "dev",
+  "model_key": "haiku",
+  "model_name": "claude-haiku-4-5-20251001",
+  "timestamp": "2026-09-13T13:28:13.240476+00:00",
+  "prompt_chars": 2379,
+  "output": "SELECT member.member_id, member.full_name FROM member JOIN plan ON member.plan_id = plan.plan_id WHERE plan.name = 'Student';",
+  "input_tokens": 638,
+  "output_tokens": 40,
+  "error": null,
+  "latency_ms": 916.9
+}

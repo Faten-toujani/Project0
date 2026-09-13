@@ -1,0 +1,14 @@
+{
+  "item_id": "t1-11",
+  "tier": 1,
+  "split": "test",
+  "model_key": "haiku",
+  "model_name": "claude-haiku-4-5-20251001",
+  "timestamp": "2026-09-13T14:12:09.212168+00:00",
+  "prompt_chars": 2379,
+  "output": "SELECT ROUND(AVG(distance_km), 2) FROM trip;",
+  "input_tokens": 639,
+  "output_tokens": 20,
+  "error": null,
+  "latency_ms": 795.6
+}

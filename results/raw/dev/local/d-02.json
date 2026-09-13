@@ -1,0 +1,14 @@
+{
+  "item_id": "d-02",
+  "tier": 1,
+  "split": "dev",
+  "model_key": "local",
+  "model_name": "qwen2.5-coder:3b",
+  "timestamp": "2026-09-13T13:07:17.191834+00:00",
+  "prompt_chars": 2338,
+  "output": "SELECT name FROM plan",
+  "input_tokens": 522,
+  "output_tokens": 5,
+  "error": null,
+  "latency_ms": 2693.0
+}

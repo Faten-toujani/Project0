@@ -1,0 +1,14 @@
+{
+  "item_id": "d-06",
+  "tier": 2,
+  "split": "dev",
+  "model_key": "local",
+  "model_name": "qwen2.5-coder:3b",
+  "timestamp": "2026-09-13T13:07:28.265140+00:00",
+  "prompt_chars": 2382,
+  "output": "SELECT city, COUNT(station_id) FROM station GROUP BY city",
+  "input_tokens": 532,
+  "output_tokens": 13,
+  "error": null,
+  "latency_ms": 2868.5
+}

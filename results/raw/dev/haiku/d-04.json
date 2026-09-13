@@ -1,0 +1,14 @@
+{
+  "item_id": "d-04",
+  "tier": 1,
+  "split": "dev",
+  "model_key": "haiku",
+  "model_name": "claude-haiku-4-5-20251001",
+  "timestamp": "2026-09-13T13:28:10.674995+00:00",
+  "prompt_chars": 2344,
+  "output": "SELECT COUNT(*) FROM trip;",
+  "input_tokens": 630,
+  "output_tokens": 10,
+  "error": null,
+  "latency_ms": 976.4
+}

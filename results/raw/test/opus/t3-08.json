@@ -1,0 +1,14 @@
+{
+  "item_id": "t3-08",
+  "tier": 3,
+  "split": "test",
+  "model_key": "opus",
+  "model_name": "claude-opus-5",
+  "timestamp": "2026-09-13T14:11:53.003894+00:00",
+  "prompt_chars": 2406,
+  "output": "SELECT DISTINCT p.member_id FROM payment p WHERE p.member_id NOT IN (SELECT t.member_id FROM trip t);",
+  "input_tokens": 1139,
+  "output_tokens": 54,
+  "error": null,
+  "latency_ms": 2208.9
+}

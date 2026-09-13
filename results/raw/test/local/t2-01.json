@@ -1,0 +1,14 @@
+{
+  "item_id": "t2-01",
+  "tier": 2,
+  "split": "test",
+  "model_key": "local",
+  "model_name": "qwen2.5-coder:3b",
+  "timestamp": "2026-09-13T14:13:53.523702+00:00",
+  "prompt_chars": 2436,
+  "output": "SELECT s.name, COUNT(b.bike_id) AS bike_count\nFROM station s\nLEFT JOIN bike b ON s.station_id = b.station_id\nGROUP BY s.station_id",
+  "input_tokens": 540,
+  "output_tokens": 37,
+  "error": null,
+  "latency_ms": 3383.9
+}

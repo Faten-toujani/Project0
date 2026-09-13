@@ -1,0 +1,14 @@
+{
+  "item_id": "t3-09",
+  "tier": 3,
+  "split": "test",
+  "model_key": "local",
+  "model_name": "qwen2.5-coder:3b",
+  "timestamp": "2026-09-13T14:15:30.496783+00:00",
+  "prompt_chars": 2503,
+  "output": "SELECT s.name, MAX(T2.resolved_on - T2.reported_on) AS longest_days\nFROM station s\nJOIN bike b ON s.station_id = b.station_id\nJOIN maintenance m ON b.bike_id = m.bike_id\nWHERE m.resolved_on IS NOT NULL\nGROUP BY s.name",
+  "input_tokens": 551,
+  "output_tokens": 65,
+  "error": null,
+  "latency_ms": 4085.9
+}

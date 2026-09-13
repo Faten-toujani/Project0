@@ -1,0 +1,14 @@
+{
+  "item_id": "d-09",
+  "tier": 1,
+  "split": "dev",
+  "model_key": "haiku",
+  "model_name": "claude-haiku-4-5-20251001",
+  "timestamp": "2026-09-13T13:28:14.913208+00:00",
+  "prompt_chars": 2370,
+  "output": "SELECT COUNT(*) FROM maintenance WHERE issue = 'battery fault';",
+  "input_tokens": 635,
+  "output_tokens": 17,
+  "error": null,
+  "latency_ms": 717.2
+}

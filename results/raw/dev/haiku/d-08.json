@@ -1,0 +1,14 @@
+{
+  "item_id": "d-08",
+  "tier": 1,
+  "split": "dev",
+  "model_key": "haiku",
+  "model_name": "claude-haiku-4-5-20251001",
+  "timestamp": "2026-09-13T13:28:14.159075+00:00",
+  "prompt_chars": 2376,
+  "output": "SELECT ROUND(AVG(capacity), 2) FROM station;",
+  "input_tokens": 637,
+  "output_tokens": 18,
+  "error": null,
+  "latency_ms": 752.7
+}

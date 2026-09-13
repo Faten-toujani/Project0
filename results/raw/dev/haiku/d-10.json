@@ -1,0 +1,14 @@
+{
+  "item_id": "d-10",
+  "tier": 2,
+  "split": "dev",
+  "model_key": "haiku",
+  "model_name": "claude-haiku-4-5-20251001",
+  "timestamp": "2026-09-13T13:28:15.631152+00:00",
+  "prompt_chars": 2406,
+  "output": "SELECT name, manufacturer FROM model WHERE is_electric = 1 AND battery_wh > 500;",
+  "input_tokens": 645,
+  "output_tokens": 26,
+  "error": null,
+  "latency_ms": 852.9
+}

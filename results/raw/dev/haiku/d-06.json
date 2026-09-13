@@ -1,0 +1,14 @@
+{
+  "item_id": "d-06",
+  "tier": 2,
+  "split": "dev",
+  "model_key": "haiku",
+  "model_name": "claude-haiku-4-5-20251001",
+  "timestamp": "2026-09-13T13:28:12.492829+00:00",
+  "prompt_chars": 2382,
+  "output": "SELECT city, COUNT(*) as count FROM station GROUP BY city;",
+  "input_tokens": 639,
+  "output_tokens": 17,
+  "error": null,
+  "latency_ms": 746.7
+}

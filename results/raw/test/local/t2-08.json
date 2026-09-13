@@ -1,0 +1,14 @@
+{
+  "item_id": "t2-08",
+  "tier": 2,
+  "split": "test",
+  "model_key": "local",
+  "model_name": "qwen2.5-coder:3b",
+  "timestamp": "2026-09-13T14:14:17.097614+00:00",
+  "prompt_chars": 2398,
+  "output": "SELECT s.name, SUM(m.cost) AS total_maintenance_cost\nFROM station s\nJOIN bike b ON s.station_id = b.station_id\nJOIN maintenance m ON b.bike_id = m.bike_id\nGROUP BY s.name",
+  "input_tokens": 531,
+  "output_tokens": 49,
+  "error": null,
+  "latency_ms": 3710.8
+}

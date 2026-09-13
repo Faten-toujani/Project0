@@ -1,0 +1,14 @@
+{
+  "item_id": "t1-15",
+  "tier": 1,
+  "split": "test",
+  "model_key": "local",
+  "model_name": "qwen2.5-coder:3b",
+  "timestamp": "2026-09-13T14:13:35.989756+00:00",
+  "prompt_chars": 2366,
+  "output": "SELECT COUNT(model_id) FROM model WHERE manufacturer = 'Norvane'",
+  "input_tokens": 527,
+  "output_tokens": 16,
+  "error": null,
+  "latency_ms": 2913.5
+}

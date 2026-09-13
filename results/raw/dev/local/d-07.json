@@ -1,0 +1,14 @@
+{
+  "item_id": "d-07",
+  "tier": 2,
+  "split": "dev",
+  "model_key": "local",
+  "model_name": "qwen2.5-coder:3b",
+  "timestamp": "2026-09-13T13:07:31.134642+00:00",
+  "prompt_chars": 2379,
+  "output": "SELECT member_id, full_name FROM member WHERE plan_id = (SELECT plan_id FROM plan WHERE name = 'Student')",
+  "input_tokens": 530,
+  "output_tokens": 25,
+  "error": null,
+  "latency_ms": 3119.8
+}

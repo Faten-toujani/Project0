@@ -1,0 +1,14 @@
+{
+  "item_id": "t1-05",
+  "tier": 1,
+  "split": "test",
+  "model_key": "haiku",
+  "model_name": "claude-haiku-4-5-20251001",
+  "timestamp": "2026-09-13T14:12:04.248483+00:00",
+  "prompt_chars": 2342,
+  "output": "SELECT COUNT(*) FROM member WHERE strftime('%Y', joined_on) = '2025';",
+  "input_tokens": 631,
+  "output_tokens": 24,
+  "error": null,
+  "latency_ms": 1323.6
+}

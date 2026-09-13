@@ -1,0 +1,14 @@
+{
+  "item_id": "t3-10",
+  "tier": 3,
+  "split": "test",
+  "model_key": "haiku",
+  "model_name": "claude-haiku-4-5-20251001",
+  "timestamp": "2026-09-13T14:12:48.085630+00:00",
+  "prompt_chars": 2445,
+  "output": "SELECT DISTINCT m.member_id, m.full_name\nFROM member m\nJOIN trip t ON m.member_id = t.member_id\nWHERE strftime('%Y', m.joined_on) = '2024'\nAND (julianday(t.started_at) - julianday(m.joined_on)) > 120\nAND t.trip_id = (\n  SELECT trip_id\n  FROM trip\n  WHERE member_id = m.member_id\n  ORDER BY started_at ASC\n  LIMIT 1\n);",
+  "input_tokens": 655,
+  "output_tokens": 130,
+  "error": null,
+  "latency_ms": 1660.0
+}

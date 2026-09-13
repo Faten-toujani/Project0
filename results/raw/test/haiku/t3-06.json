@@ -1,0 +1,14 @@
+{
+  "item_id": "t3-06",
+  "tier": 3,
+  "split": "test",
+  "model_key": "haiku",
+  "model_name": "claude-haiku-4-5-20251001",
+  "timestamp": "2026-09-13T14:12:43.810668+00:00",
+  "prompt_chars": 2439,
+  "output": "SELECT p.name, ROUND(100.0 * COUNT(DISTINCT t.member_id) / COUNT(DISTINCT m.member_id), 1) AS percentage\nFROM plan p\nLEFT JOIN member m ON p.plan_id = m.plan_id\nLEFT JOIN trip t ON m.member_id = t.member_id\nGROUP BY p.plan_id, p.name;",
+  "input_tokens": 652,
+  "output_tokens": 93,
+  "error": null,
+  "latency_ms": 1052.5
+}

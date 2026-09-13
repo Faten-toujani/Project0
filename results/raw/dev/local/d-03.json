@@ -1,0 +1,14 @@
+{
+  "item_id": "d-03",
+  "tier": 1,
+  "split": "dev",
+  "model_key": "local",
+  "model_name": "qwen2.5-coder:3b",
+  "timestamp": "2026-09-13T13:07:19.885299+00:00",
+  "prompt_chars": 2350,
+  "output": "SELECT COUNT(*) FROM bike WHERE status = 'active'",
+  "input_tokens": 524,
+  "output_tokens": 12,
+  "error": null,
+  "latency_ms": 2825.7
+}

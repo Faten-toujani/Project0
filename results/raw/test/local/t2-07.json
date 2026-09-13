@@ -1,0 +1,14 @@
+{
+  "item_id": "t2-07",
+  "tier": 2,
+  "split": "test",
+  "model_key": "local",
+  "model_name": "qwen2.5-coder:3b",
+  "timestamp": "2026-09-13T14:14:14.000823+00:00",
+  "prompt_chars": 2386,
+  "output": "SELECT city, COUNT(station_id) AS station_count FROM station GROUP BY city HAVING station_count > 2",
+  "input_tokens": 532,
+  "output_tokens": 23,
+  "error": null,
+  "latency_ms": 3096.3
+}

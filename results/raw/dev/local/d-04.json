@@ -1,0 +1,14 @@
+{
+  "item_id": "d-04",
+  "tier": 1,
+  "split": "dev",
+  "model_key": "local",
+  "model_name": "qwen2.5-coder:3b",
+  "timestamp": "2026-09-13T13:07:22.711737+00:00",
+  "prompt_chars": 2344,
+  "output": "SELECT COUNT(*) FROM trip",
+  "input_tokens": 523,
+  "output_tokens": 6,
+  "error": null,
+  "latency_ms": 2670.0
+}

@@ -1,0 +1,14 @@
+{
+  "item_id": "d-01",
+  "tier": 1,
+  "split": "dev",
+  "model_key": "local",
+  "model_name": "qwen2.5-coder:3b",
+  "timestamp": "2026-09-13T13:07:03.866517+00:00",
+  "prompt_chars": 2338,
+  "output": "SELECT COUNT(station_id) FROM station",
+  "input_tokens": 521,
+  "output_tokens": 8,
+  "error": null,
+  "latency_ms": 13324.3
+}

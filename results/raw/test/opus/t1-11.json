@@ -1,0 +1,14 @@
+{
+  "item_id": "t1-11",
+  "tier": 1,
+  "split": "test",
+  "model_key": "opus",
+  "model_name": "claude-opus-5",
+  "timestamp": "2026-09-13T14:10:23.635774+00:00",
+  "prompt_chars": 2379,
+  "output": "ROUND(AVG(distance_km), 2) AS avg_distance_km FROM trip\n\nWait — output must be a SELECT statement:\n\nSELECT ROUND(AVG(distance_km), 2) AS avg_distance_km FROM trip;",
+  "input_tokens": 1136,
+  "output_tokens": 86,
+  "error": null,
+  "latency_ms": 2099.0
+}

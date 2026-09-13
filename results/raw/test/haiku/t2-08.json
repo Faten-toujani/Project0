@@ -1,0 +1,14 @@
+{
+  "item_id": "t2-08",
+  "tier": 2,
+  "split": "test",
+  "model_key": "haiku",
+  "model_name": "claude-haiku-4-5-20251001",
+  "timestamp": "2026-09-13T14:12:25.062814+00:00",
+  "prompt_chars": 2398,
+  "output": "SELECT s.name, COALESCE(SUM(m.cost), 0) as total_maintenance_cost FROM station s LEFT JOIN bike b ON s.station_id = b.station_id LEFT JOIN maintenance m ON b.bike_id = m.bike_id GROUP BY s.station_id, s.name;",
+  "input_tokens": 638,
+  "output_tokens": 76,
+  "error": null,
+  "latency_ms": 1092.8
+}

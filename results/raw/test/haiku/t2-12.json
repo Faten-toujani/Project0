@@ -1,0 +1,14 @@
+{
+  "item_id": "t2-12",
+  "tier": 2,
+  "split": "test",
+  "model_key": "haiku",
+  "model_name": "claude-haiku-4-5-20251001",
+  "timestamp": "2026-09-13T14:12:29.005641+00:00",
+  "prompt_chars": 2424,
+  "output": "SELECT model.name, SUM(trip.distance_km) as total_distance FROM model JOIN bike ON model.model_id = bike.model_id JOIN trip ON bike.bike_id = trip.bike_id GROUP BY model.model_id ORDER BY total_distance DESC LIMIT 3;",
+  "input_tokens": 647,
+  "output_tokens": 69,
+  "error": null,
+  "latency_ms": 1349.8
+}

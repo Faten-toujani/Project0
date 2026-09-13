@@ -1,0 +1,14 @@
+{
+  "item_id": "t2-10",
+  "tier": 2,
+  "split": "test",
+  "model_key": "local",
+  "model_name": "qwen2.5-coder:3b",
+  "timestamp": "2026-09-13T14:14:24.147645+00:00",
+  "prompt_chars": 2391,
+  "output": "SELECT T2.name FROM trip AS T1 INNER JOIN station AS T2 ON T1.start_station_id = T2.station_id GROUP BY T2.name ORDER BY COUNT(T1.trip_id) DESC LIMIT 1",
+  "input_tokens": 531,
+  "output_tokens": 44,
+  "error": null,
+  "latency_ms": 3621.0
+}

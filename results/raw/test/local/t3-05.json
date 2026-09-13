@@ -1,0 +1,14 @@
+{
+  "item_id": "t3-05",
+  "tier": 3,
+  "split": "test",
+  "model_key": "local",
+  "model_name": "qwen2.5-coder:3b",
+  "timestamp": "2026-09-13T14:15:16.965769+00:00",
+  "prompt_chars": 2394,
+  "output": "SELECT bike_id FROM maintenance WHERE resolved_on IS NULL GROUP BY bike_id HAVING COUNT(*) > 1",
+  "input_tokens": 531,
+  "output_tokens": 22,
+  "error": null,
+  "latency_ms": 3092.9
+}

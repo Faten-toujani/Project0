@@ -1,0 +1,14 @@
+{
+  "item_id": "t2-13",
+  "tier": 2,
+  "split": "test",
+  "model_key": "haiku",
+  "model_name": "claude-haiku-4-5-20251001",
+  "timestamp": "2026-09-13T14:12:30.356372+00:00",
+  "prompt_chars": 2397,
+  "output": "SELECT s.city, COUNT(t.trip_id) as total_trips FROM station s LEFT JOIN trip t ON s.station_id = t.start_station_id GROUP BY s.city;",
+  "input_tokens": 641,
+  "output_tokens": 47,
+  "error": null,
+  "latency_ms": 879.3
+}

@@ -1,0 +1,14 @@
+{
+  "item_id": "t2-20",
+  "tier": 2,
+  "split": "test",
+  "model_key": "haiku",
+  "model_name": "claude-haiku-4-5-20251001",
+  "timestamp": "2026-09-13T14:12:37.262655+00:00",
+  "prompt_chars": 2410,
+  "output": "SELECT issue, COUNT(*) as num_records FROM maintenance GROUP BY issue HAVING COUNT(*) > 30;",
+  "input_tokens": 643,
+  "output_tokens": 27,
+  "error": null,
+  "latency_ms": 895.6
+}

@@ -1,0 +1,14 @@
+{
+  "item_id": "t2-19",
+  "tier": 2,
+  "split": "test",
+  "model_key": "opus",
+  "model_name": "claude-opus-5",
+  "timestamp": "2026-09-13T14:11:27.230897+00:00",
+  "prompt_chars": 2405,
+  "output": "SELECT m.manufacturer, COUNT(b.bike_id) AS retired_bikes FROM model m LEFT JOIN bike b ON b.model_id = m.model_id AND b.status = 'retired' GROUP BY m.manufacturer;",
+  "input_tokens": 1144,
+  "output_tokens": 88,
+  "error": null,
+  "latency_ms": 2158.6
+}

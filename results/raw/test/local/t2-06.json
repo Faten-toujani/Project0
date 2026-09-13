@@ -1,0 +1,14 @@
+{
+  "item_id": "t2-06",
+  "tier": 2,
+  "split": "test",
+  "model_key": "local",
+  "model_name": "qwen2.5-coder:3b",
+  "timestamp": "2026-09-13T14:14:10.275043+00:00",
+  "prompt_chars": 2403,
+  "output": "SELECT m.name, COUNT(maint_id) AS maintenance_count\nFROM model m\nJOIN bike b ON m.model_id = b.model_id\nJOIN maintenance maint ON b.bike_id = maint.bike_id\nGROUP BY m.name",
+  "input_tokens": 533,
+  "output_tokens": 48,
+  "error": null,
+  "latency_ms": 3724.6
+}

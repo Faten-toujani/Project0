@@ -1,0 +1,14 @@
+{
+  "item_id": "t2-11",
+  "tier": 2,
+  "split": "test",
+  "model_key": "opus",
+  "model_name": "claude-opus-5",
+  "timestamp": "2026-09-13T14:11:08.609419+00:00",
+  "prompt_chars": 2396,
+  "output": "```sql\nSELECT method, COUNT(*) AS payment_count, SUM(amount) AS total_amount FROM payment GROUP BY method;\n```",
+  "input_tokens": 1134,
+  "output_tokens": 54,
+  "error": null,
+  "latency_ms": 2541.6
+}

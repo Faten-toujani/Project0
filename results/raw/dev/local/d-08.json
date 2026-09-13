@@ -1,0 +1,14 @@
+{
+  "item_id": "d-08",
+  "tier": 1,
+  "split": "dev",
+  "model_key": "local",
+  "model_name": "qwen2.5-coder:3b",
+  "timestamp": "2026-09-13T13:07:34.255440+00:00",
+  "prompt_chars": 2376,
+  "output": "SELECT AVG(capacity) FROM station",
+  "input_tokens": 529,
+  "output_tokens": 8,
+  "error": null,
+  "latency_ms": 2805.8
+}

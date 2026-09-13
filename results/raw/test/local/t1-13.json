@@ -1,0 +1,14 @@
+{
+  "item_id": "t1-13",
+  "tier": 1,
+  "split": "test",
+  "model_key": "local",
+  "model_name": "qwen2.5-coder:3b",
+  "timestamp": "2026-09-13T14:13:29.941899+00:00",
+  "prompt_chars": 2385,
+  "output": "SELECT name, monthly_fee FROM plan ORDER BY monthly_fee ASC LIMIT 3",
+  "input_tokens": 533,
+  "output_tokens": 16,
+  "error": null,
+  "latency_ms": 2955.1
+}

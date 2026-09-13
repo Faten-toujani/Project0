@@ -1,0 +1,14 @@
+{
+  "item_id": "t3-08",
+  "tier": 3,
+  "split": "test",
+  "model_key": "local",
+  "model_name": "qwen2.5-coder:3b",
+  "timestamp": "2026-09-13T14:15:27.198582+00:00",
+  "prompt_chars": 2406,
+  "output": "SELECT member_id FROM member WHERE member_id NOT IN (SELECT member_id FROM trip) AND member_id IN (SELECT member_id FROM payment)",
+  "input_tokens": 536,
+  "output_tokens": 29,
+  "error": null,
+  "latency_ms": 3296.9
+}

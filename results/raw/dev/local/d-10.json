@@ -1,0 +1,14 @@
+{
+  "item_id": "d-10",
+  "tier": 2,
+  "split": "dev",
+  "model_key": "local",
+  "model_name": "qwen2.5-coder:3b",
+  "timestamp": "2026-09-13T13:07:39.935326+00:00",
+  "prompt_chars": 2406,
+  "output": "SELECT model.name, model.manufacturer FROM model WHERE model.is_electric = 1 AND model.battery_wh > 500",
+  "input_tokens": 537,
+  "output_tokens": 28,
+  "error": null,
+  "latency_ms": 3224.3
+}

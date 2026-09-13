@@ -1,0 +1,14 @@
+{
+  "item_id": "d-05",
+  "tier": 1,
+  "split": "dev",
+  "model_key": "haiku",
+  "model_name": "claude-haiku-4-5-20251001",
+  "timestamp": "2026-09-13T13:28:11.654209+00:00",
+  "prompt_chars": 2381,
+  "output": "SELECT name, city FROM station WHERE capacity >= 35;",
+  "input_tokens": 639,
+  "output_tokens": 15,
+  "error": null,
+  "latency_ms": 837.3
+}

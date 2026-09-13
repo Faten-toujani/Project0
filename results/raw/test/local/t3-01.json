@@ -1,0 +1,14 @@
+{
+  "item_id": "t3-01",
+  "tier": 3,
+  "split": "test",
+  "model_key": "local",
+  "model_name": "qwen2.5-coder:3b",
+  "timestamp": "2026-09-13T14:15:01.871309+00:00",
+  "prompt_chars": 2451,
+  "output": "SELECT member_id, full_name, COUNT(*) AS referred_count FROM member WHERE referred_by IS NOT NULL GROUP BY member_id HAVING COUNT(*) >= 3",
+  "input_tokens": 544,
+  "output_tokens": 32,
+  "error": null,
+  "latency_ms": 3316.1
+}

@@ -1,0 +1,14 @@
+{
+  "item_id": "t3-04",
+  "tier": 3,
+  "split": "test",
+  "model_key": "opus",
+  "model_name": "claude-opus-5",
+  "timestamp": "2026-09-13T14:11:39.269775+00:00",
+  "prompt_chars": 2440,
+  "output": "SELECT m.name, ROUND(COALESCE(SUM(mt.cost), 0) / COUNT(DISTINCT b.bike_id), 2) AS cost_per_bike\nFROM model m\nJOIN bike b ON b.model_id = m.model_id\nLEFT JOIN maintenance mt ON mt.bike_id",
+  "input_tokens": 1155,
+  "output_tokens": 400,
+  "error": null,
+  "latency_ms": 5079.0
+}

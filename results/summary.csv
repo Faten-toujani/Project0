@@ -1,0 +1,4 @@
+model_key,model_name,n,correct,accuracy,ci95_low,ci95_high,parse_errors,exec_errors,api_errors,t1,t2,t3,p50_ms,p95_ms,mean_in_tokens,mean_out_tokens,cost_per_1k,cost_per_1k_at_100x,cost_basis
+haiku,claude-haiku-4-5-20251001,50,49,0.98,0.895,0.996,0,0,0,20,19,10,887.9,1526.8,640.5,41.4,0.8477,0.8477,list price x measured tokens
+local,qwen2.5-coder:3b,50,44,0.88,0.762,0.944,0,2,0,20,18,6,3096.3,4137.9,533.1,29.4,0.0357,0.0357,0.0394 USD/h / 1106 req/h
+opus,claude-opus-5,50,46,0.92,0.812,0.968,1,1,0,19,18,9,2270.8,3325.6,1137.3,77.1,7.6146,7.6146,list price x measured tokens

@@ -1,0 +1,14 @@
+{
+  "item_id": "t2-13",
+  "tier": 2,
+  "split": "test",
+  "model_key": "local",
+  "model_name": "qwen2.5-coder:3b",
+  "timestamp": "2026-09-13T14:14:34.849298+00:00",
+  "prompt_chars": 2397,
+  "output": "SELECT T2.city, COUNT(T1.trip_id) AS total_trips\nFROM trip AS T1\nJOIN station AS T2 ON T1.start_station_id = T2.station_id\nGROUP BY T2.city",
+  "input_tokens": 534,
+  "output_tokens": 45,
+  "error": null,
+  "latency_ms": 3670.4
+}

@@ -1,0 +1,14 @@
+{
+  "item_id": "d-09",
+  "tier": 1,
+  "split": "dev",
+  "model_key": "local",
+  "model_name": "qwen2.5-coder:3b",
+  "timestamp": "2026-09-13T13:07:37.062037+00:00",
+  "prompt_chars": 2370,
+  "output": "SELECT COUNT(*) FROM maintenance WHERE issue = 'battery fault'",
+  "input_tokens": 526,
+  "output_tokens": 13,
+  "error": null,
+  "latency_ms": 2872.7
+}

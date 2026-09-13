@@ -1,0 +1,14 @@
+{
+  "item_id": "t2-04",
+  "tier": 2,
+  "split": "test",
+  "model_key": "local",
+  "model_name": "qwen2.5-coder:3b",
+  "timestamp": "2026-09-13T14:14:03.476672+00:00",
+  "prompt_chars": 2430,
+  "output": "SELECT T2.name, ROUND(AVG(T1.distance_km), 2) AS avg_trip_distance\nFROM trip AS T1\nJOIN station AS T2 ON T1.start_station_id = T2.station_id\nGROUP BY T2.name",
+  "input_tokens": 539,
+  "output_tokens": 50,
+  "error": null,
+  "latency_ms": 3776.4
+}

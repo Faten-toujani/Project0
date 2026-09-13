@@ -1,0 +1,14 @@
+{
+  "item_id": "t2-14",
+  "tier": 2,
+  "split": "test",
+  "model_key": "local",
+  "model_name": "qwen2.5-coder:3b",
+  "timestamp": "2026-09-13T14:14:38.520323+00:00",
+  "prompt_chars": 2400,
+  "output": "SELECT member_id, SUM(amount) AS total_amount_paid FROM payment GROUP BY member_id HAVING total_amount_paid > 300",
+  "input_tokens": 535,
+  "output_tokens": 28,
+  "error": null,
+  "latency_ms": 3245.4
+}

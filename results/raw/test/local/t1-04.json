@@ -1,0 +1,14 @@
+{
+  "item_id": "t1-04",
+  "tier": 1,
+  "split": "test",
+  "model_key": "local",
+  "model_name": "qwen2.5-coder:3b",
+  "timestamp": "2026-09-13T14:13:04.086058+00:00",
+  "prompt_chars": 2366,
+  "output": "SELECT name FROM model WHERE is_electric = 0",
+  "input_tokens": 527,
+  "output_tokens": 12,
+  "error": null,
+  "latency_ms": 2881.5
+}

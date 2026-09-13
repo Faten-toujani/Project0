@@ -1,0 +1,14 @@
+{
+  "item_id": "t1-19",
+  "tier": 1,
+  "split": "test",
+  "model_key": "opus",
+  "model_name": "claude-opus-5",
+  "timestamp": "2026-09-13T14:10:40.489998+00:00",
+  "prompt_chars": 2363,
+  "output": "SELECT SUM(amount) FROM payment WHERE method = 'card';",
+  "input_tokens": 1129,
+  "output_tokens": 28,
+  "error": null,
+  "latency_ms": 1980.4
+}

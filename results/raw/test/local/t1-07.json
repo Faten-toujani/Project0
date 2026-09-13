@@ -1,0 +1,14 @@
+{
+  "item_id": "t1-07",
+  "tier": 1,
+  "split": "test",
+  "model_key": "local",
+  "model_name": "qwen2.5-coder:3b",
+  "timestamp": "2026-09-13T14:13:12.869366+00:00",
+  "prompt_chars": 2351,
+  "output": "SELECT SUM(amount) FROM payment",
+  "input_tokens": 524,
+  "output_tokens": 7,
+  "error": null,
+  "latency_ms": 2699.7
+}

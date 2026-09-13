@@ -1,0 +1,14 @@
+{
+  "item_id": "t2-06",
+  "tier": 2,
+  "split": "test",
+  "model_key": "haiku",
+  "model_name": "claude-haiku-4-5-20251001",
+  "timestamp": "2026-09-13T14:12:23.174089+00:00",
+  "prompt_chars": 2403,
+  "output": "SELECT m.name, COUNT(maint.maint_id) as maintenance_count\nFROM model m\nLEFT JOIN bike b ON m.model_id = b.model_id\nLEFT JOIN maintenance maint ON b.bike_id = maint.bike_id\nGROUP BY m.model_id, m.name\nORDER BY m.name;",
+  "input_tokens": 640,
+  "output_tokens": 81,
+  "error": null,
+  "latency_ms": 1046.4
+}
