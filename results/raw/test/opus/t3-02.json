@@ -4,11 +4,11 @@
   "split": "test",
   "model_key": "opus",
   "model_name": "claude-opus-5",
-  "timestamp": "2026-09-13T14:11:34.357479+00:00",
-  "prompt_chars": 2431,
-  "output": "```sql\nSELECT s.name AS station_name,\n       (SELECT COUNT(*) FROM trip t WHERE t.start_station_id = s.station_id) AS trips_started,\n       (SELECT COUNT(*) FROM trip t WHERE t.end_station_id = s.station_id) AS trips_ended\nFROM station s\nORDER BY s.name\n```",
-  "input_tokens": 1141,
-  "output_tokens": 127,
+  "timestamp": "2026-09-13T17:59:09.138840+00:00",
+  "prompt_chars": 2454,
+  "output": "SELECT s.name AS station_name,\n       (SELECT COUNT(*) FROM trip t WHERE t.start_station_id = s.station_id) AS trips_started,\n       (SELECT COUNT(*) FROM trip t WHERE t.end_station_id = s.station_id) AS trips_ended\nFROM station s\nORDER BY s.name;",
+  "input_tokens": 1146,
+  "output_tokens": 258,
   "error": null,
-  "latency_ms": 2594.1
+  "latency_ms": 3876.5
 }

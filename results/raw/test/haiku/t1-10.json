@@ -4,11 +4,11 @@
   "split": "test",
   "model_key": "haiku",
   "model_name": "claude-haiku-4-5-20251001",
-  "timestamp": "2026-09-13T14:12:08.412202+00:00",
-  "prompt_chars": 2344,
-  "output": "SELECT COUNT(*) FROM member WHERE city = 'Toulouse';",
-  "input_tokens": 630,
-  "output_tokens": 17,
+  "timestamp": "2026-09-13T18:00:40.162352+00:00",
+  "prompt_chars": 2375,
+  "output": "SELECT MAX(battery_wh) FROM model WHERE is_electric = 1;",
+  "input_tokens": 636,
+  "output_tokens": 21,
   "error": null,
-  "latency_ms": 797.7
+  "latency_ms": 1033.7
 }

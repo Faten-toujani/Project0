@@ -1,0 +1,14 @@
+{
+  "item_id": "t3-17",
+  "tier": 3,
+  "split": "test",
+  "model_key": "haiku",
+  "model_name": "claude-haiku-4-5-20251001",
+  "timestamp": "2026-09-13T18:01:21.300106+00:00",
+  "prompt_chars": 2440,
+  "output": "SELECT trip_id FROM trip WHERE distance_km > (SELECT 2 * AVG(distance_km) FROM trip t2 WHERE t2.start_station_id = trip.start_station_id);",
+  "input_tokens": 648,
+  "output_tokens": 50,
+  "error": null,
+  "latency_ms": 1250.0
+}

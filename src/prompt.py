@@ -18,7 +18,7 @@ Rules:
 
 Question: {question}"""
 
-MAX_OUTPUT_TOKENS = 400
+MAX_OUTPUT_TOKENS = 1000
 TEMPERATURE = 0
 
 

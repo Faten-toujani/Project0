@@ -4,11 +4,11 @@
   "split": "test",
   "model_key": "local",
   "model_name": "qwen2.5-coder:3b",
-  "timestamp": "2026-09-13T14:14:38.520323+00:00",
-  "prompt_chars": 2400,
-  "output": "SELECT member_id, SUM(amount) AS total_amount_paid FROM payment GROUP BY member_id HAVING total_amount_paid > 300",
-  "input_tokens": 535,
-  "output_tokens": 28,
+  "timestamp": "2026-09-13T18:03:03.927300+00:00",
+  "prompt_chars": 2416,
+  "output": "SELECT AVG(T2.monthly_fee) FROM member AS T1 INNER JOIN plan AS T2 ON T1.plan_id = T2.plan_id WHERE T1.city = 'Lille'",
+  "input_tokens": 539,
+  "output_tokens": 39,
   "error": null,
-  "latency_ms": 3245.4
+  "latency_ms": 3558.7
 }

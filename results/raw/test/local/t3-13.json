@@ -1,0 +1,14 @@
+{
+  "item_id": "t3-13",
+  "tier": 3,
+  "split": "test",
+  "model_key": "local",
+  "model_name": "qwen2.5-coder:3b",
+  "timestamp": "2026-09-13T18:03:56.707775+00:00",
+  "prompt_chars": 2400,
+  "output": "SELECT member_id FROM trip GROUP BY member_id, strftime('%Y-%m-%d', started_at) HAVING COUNT(*) >= 2",
+  "input_tokens": 536,
+  "output_tokens": 29,
+  "error": null,
+  "latency_ms": 3286.2
+}

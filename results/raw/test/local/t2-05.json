@@ -4,11 +4,11 @@
   "split": "test",
   "model_key": "local",
   "model_name": "qwen2.5-coder:3b",
-  "timestamp": "2026-09-13T14:14:07.254008+00:00",
-  "prompt_chars": 2383,
-  "output": "SELECT COUNT(trip_id) FROM trip WHERE start_station_id != end_station_id",
-  "input_tokens": 530,
+  "timestamp": "2026-09-13T18:02:32.563288+00:00",
+  "prompt_chars": 2435,
+  "output": "SELECT COUNT(trip_id) FROM trip WHERE end_station_id != start_station_id",
+  "input_tokens": 543,
   "output_tokens": 17,
   "error": null,
-  "latency_ms": 3020.7
+  "latency_ms": 3034.1
 }

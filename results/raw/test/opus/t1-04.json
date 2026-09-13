@@ -4,11 +4,11 @@
   "split": "test",
   "model_key": "opus",
   "model_name": "claude-opus-5",
-  "timestamp": "2026-09-13T14:10:09.392519+00:00",
-  "prompt_chars": 2366,
-  "output": "SELECT name FROM model WHERE is_electric = 0;",
-  "input_tokens": 1127,
-  "output_tokens": 23,
+  "timestamp": "2026-09-13T17:58:16.929941+00:00",
+  "prompt_chars": 2379,
+  "output": "SELECT ROUND(AVG(distance_km), 2) AS avg_distance_km FROM trip;",
+  "input_tokens": 1136,
+  "output_tokens": 38,
   "error": null,
-  "latency_ms": 1937.8
+  "latency_ms": 2229.8
 }

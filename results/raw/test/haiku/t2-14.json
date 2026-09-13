@@ -4,11 +4,11 @@
   "split": "test",
   "model_key": "haiku",
   "model_name": "claude-haiku-4-5-20251001",
-  "timestamp": "2026-09-13T14:12:31.238090+00:00",
-  "prompt_chars": 2400,
-  "output": "SELECT member_id, SUM(amount) as total_amount FROM payment GROUP BY member_id HAVING SUM(amount) > 300;",
-  "input_tokens": 641,
-  "output_tokens": 35,
+  "timestamp": "2026-09-13T18:00:56.384833+00:00",
+  "prompt_chars": 2416,
+  "output": "SELECT ROUND(AVG(plan.monthly_fee), 2) FROM plan JOIN member ON plan.plan_id = member.plan_id WHERE member.city = 'Lille';",
+  "input_tokens": 647,
+  "output_tokens": 45,
   "error": null,
-  "latency_ms": 1020.2
+  "latency_ms": 1110.0
 }

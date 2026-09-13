@@ -1,0 +1,14 @@
+{
+  "item_id": "t3-14",
+  "tier": 3,
+  "split": "test",
+  "model_key": "opus",
+  "model_name": "claude-opus-5",
+  "timestamp": "2026-09-13T17:59:54.520389+00:00",
+  "prompt_chars": 2437,
+  "output": "SELECT m.member_id, r.member_id AS referrer_id FROM member m JOIN member r ON m.referred_by = r.member_id WHERE m.city = r.city;",
+  "input_tokens": 1147,
+  "output_tokens": 61,
+  "error": null,
+  "latency_ms": 2030.8
+}

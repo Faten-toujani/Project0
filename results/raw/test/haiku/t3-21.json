@@ -1,0 +1,14 @@
+{
+  "item_id": "t3-21",
+  "tier": 3,
+  "split": "test",
+  "model_key": "haiku",
+  "model_name": "claude-haiku-4-5-20251001",
+  "timestamp": "2026-09-13T18:01:27.688113+00:00",
+  "prompt_chars": 2400,
+  "output": "SELECT DISTINCT b.bike_id FROM bike b WHERE b.bike_id NOT IN (SELECT DISTINCT t.bike_id FROM trip t JOIN member m ON t.member_id = m.member_id JOIN plan p ON m.plan_id = p.plan_id WHERE p.name = 'Premium')",
+  "input_tokens": 644,
+  "output_tokens": 73,
+  "error": null,
+  "latency_ms": 1252.2
+}

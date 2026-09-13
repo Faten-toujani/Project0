@@ -4,11 +4,11 @@
   "split": "test",
   "model_key": "opus",
   "model_name": "claude-opus-5",
-  "timestamp": "2026-09-13T14:11:08.609419+00:00",
-  "prompt_chars": 2396,
-  "output": "```sql\nSELECT method, COUNT(*) AS payment_count, SUM(amount) AS total_amount FROM payment GROUP BY method;\n```",
-  "input_tokens": 1134,
-  "output_tokens": 54,
+  "timestamp": "2026-09-13T17:58:55.858484+00:00",
+  "prompt_chars": 2424,
+  "output": "SELECT model.name, SUM(trip.distance_km) AS total_distance FROM trip JOIN bike ON trip.bike_id = bike.bike_id JOIN model ON bike.model_id = model.model_id GROUP BY model.model_id, model.name ORDER BY total_distance DESC LIMIT 3",
+  "input_tokens": 1144,
+  "output_tokens": 110,
   "error": null,
-  "latency_ms": 2541.6
+  "latency_ms": 2301.8
 }

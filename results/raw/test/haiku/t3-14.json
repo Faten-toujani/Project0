@@ -1,0 +1,14 @@
+{
+  "item_id": "t3-14",
+  "tier": 3,
+  "split": "test",
+  "model_key": "haiku",
+  "model_name": "claude-haiku-4-5-20251001",
+  "timestamp": "2026-09-13T18:01:16.909371+00:00",
+  "prompt_chars": 2437,
+  "output": "SELECT m1.member_id, m1.referred_by FROM member m1 JOIN member m2 ON m1.referred_by = m2.member_id WHERE m1.city = m2.city;",
+  "input_tokens": 652,
+  "output_tokens": 52,
+  "error": null,
+  "latency_ms": 949.7
+}

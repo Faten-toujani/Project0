@@ -4,11 +4,11 @@
   "split": "test",
   "model_key": "haiku",
   "model_name": "claude-haiku-4-5-20251001",
-  "timestamp": "2026-09-13T14:12:43.027153+00:00",
-  "prompt_chars": 2394,
-  "output": "SELECT bike_id FROM maintenance WHERE resolved_on IS NULL GROUP BY bike_id HAVING COUNT(*) > 1;",
-  "input_tokens": 641,
-  "output_tokens": 29,
+  "timestamp": "2026-09-13T18:01:03.912994+00:00",
+  "prompt_chars": 2459,
+  "output": "SELECT \n  p.name,\n  ROUND(100.0 * COUNT(DISTINCT CASE WHEN t.trip_id IS NOT NULL THEN m.member_id END) / COUNT(DISTINCT m.member_id), 1) AS percentage_with_trips\nFROM plan p\nLEFT JOIN member m ON p.plan_id = m.plan_id\nLEFT JOIN trip t ON m.member_id = t.member_id\nGROUP BY p.plan_id, p.name;",
+  "input_tokens": 656,
+  "output_tokens": 117,
   "error": null,
-  "latency_ms": 781.4
+  "latency_ms": 1504.8
 }

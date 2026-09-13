@@ -4,11 +4,11 @@
   "split": "test",
   "model_key": "local",
   "model_name": "qwen2.5-coder:3b",
-  "timestamp": "2026-09-13T14:13:04.086058+00:00",
-  "prompt_chars": 2366,
-  "output": "SELECT name FROM model WHERE is_electric = 0",
-  "input_tokens": 527,
-  "output_tokens": 12,
+  "timestamp": "2026-09-13T18:01:58.231233+00:00",
+  "prompt_chars": 2379,
+  "output": "SELECT ROUND(AVG(distance_km), 2) FROM trip",
+  "input_tokens": 531,
+  "output_tokens": 13,
   "error": null,
-  "latency_ms": 2881.5
+  "latency_ms": 2896.0
 }

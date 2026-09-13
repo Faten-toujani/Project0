@@ -1,0 +1,14 @@
+{
+  "item_id": "t3-18",
+  "tier": 3,
+  "split": "test",
+  "model_key": "haiku",
+  "model_name": "claude-haiku-4-5-20251001",
+  "timestamp": "2026-09-13T18:01:22.552178+00:00",
+  "prompt_chars": 2534,
+  "output": "SELECT s.name, ROUND(100.0 * SUM(CASE WHEN t.end_station_id IS NOT NULL AND t.end_station_id != s.station_id THEN 1 ELSE 0 END) / COUNT(*), 1) as percentage FROM station s JOIN trip t ON s.station_id = t.start_station_id GROUP BY s.station_id, s.name;",
+  "input_tokens": 671,
+  "output_tokens": 100,
+  "error": null,
+  "latency_ms": 1611.3
+}

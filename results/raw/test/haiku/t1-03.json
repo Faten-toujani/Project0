@@ -4,11 +4,11 @@
   "split": "test",
   "model_key": "haiku",
   "model_name": "claude-haiku-4-5-20251001",
-  "timestamp": "2026-09-13T14:12:02.726638+00:00",
-  "prompt_chars": 2387,
-  "output": "SELECT name, monthly_fee FROM plan WHERE monthly_fee > 20;",
-  "input_tokens": 640,
-  "output_tokens": 19,
+  "timestamp": "2026-09-13T18:00:34.130427+00:00",
+  "prompt_chars": 2342,
+  "output": "SELECT COUNT(*) FROM member WHERE strftime('%Y', joined_on) = '2025';",
+  "input_tokens": 631,
+  "output_tokens": 24,
   "error": null,
-  "latency_ms": 872.9
+  "latency_ms": 738.7
 }

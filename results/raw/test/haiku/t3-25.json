@@ -1,0 +1,14 @@
+{
+  "item_id": "t3-25",
+  "tier": 3,
+  "split": "test",
+  "model_key": "haiku",
+  "model_name": "claude-haiku-4-5-20251001",
+  "timestamp": "2026-09-13T18:01:33.292192+00:00",
+  "prompt_chars": 2411,
+  "output": "SELECT s.name FROM station s WHERE (SELECT COUNT(*) FROM bike b WHERE b.station_id = s.station_id) > s.capacity / 2.0;",
+  "input_tokens": 641,
+  "output_tokens": 42,
+  "error": null,
+  "latency_ms": 1172.9
+}

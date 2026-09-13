@@ -4,11 +4,11 @@
   "split": "test",
   "model_key": "haiku",
   "model_name": "claude-haiku-4-5-20251001",
-  "timestamp": "2026-09-13T14:12:38.169905+00:00",
+  "timestamp": "2026-09-13T18:00:58.776041+00:00",
   "prompt_chars": 2451,
-  "output": "SELECT m.member_id, m.full_name, COUNT(r.member_id) AS num_referred FROM member m LEFT JOIN member r ON m.member_id = r.referred_by GROUP BY m.member_id, m.full_name HAVING COUNT(r.member_id) >= 3;",
+  "output": "SELECT m.member_id, m.full_name, COUNT(r.member_id) AS referral_count\nFROM member m\nLEFT JOIN member r ON m.member_id = r.referred_by\nGROUP BY m.member_id, m.full_name\nHAVING COUNT(r.member_id) >= 3\nORDER BY m.member_id;",
   "input_tokens": 653,
-  "output_tokens": 74,
+  "output_tokens": 87,
   "error": null,
-  "latency_ms": 1244.0
+  "latency_ms": 1396.4
 }

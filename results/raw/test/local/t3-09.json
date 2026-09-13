@@ -4,11 +4,11 @@
   "split": "test",
   "model_key": "local",
   "model_name": "qwen2.5-coder:3b",
-  "timestamp": "2026-09-13T14:15:30.496783+00:00",
-  "prompt_chars": 2503,
-  "output": "SELECT s.name, MAX(T2.resolved_on - T2.reported_on) AS longest_days\nFROM station s\nJOIN bike b ON s.station_id = b.station_id\nJOIN maintenance m ON b.bike_id = m.bike_id\nWHERE m.resolved_on IS NOT NULL\nGROUP BY s.name",
-  "input_tokens": 551,
-  "output_tokens": 65,
+  "timestamp": "2026-09-13T18:03:42.610096+00:00",
+  "prompt_chars": 2408,
+  "output": "SELECT member_id FROM trip WHERE strftime('%Y', started_at) = '2025' GROUP BY member_id HAVING COUNT(DISTINCT strftime('%m', started_at)) >= 4",
+  "input_tokens": 540,
+  "output_tokens": 41,
   "error": null,
-  "latency_ms": 4085.9
+  "latency_ms": 3491.7
 }

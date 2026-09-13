@@ -4,11 +4,11 @@
   "split": "test",
   "model_key": "local",
   "model_name": "qwen2.5-coder:3b",
-  "timestamp": "2026-09-13T14:13:09.965185+00:00",
-  "prompt_chars": 2381,
-  "output": "SELECT name, capacity FROM station ORDER BY capacity DESC LIMIT 1",
-  "input_tokens": 529,
-  "output_tokens": 14,
+  "timestamp": "2026-09-13T18:02:03.909694+00:00",
+  "prompt_chars": 2385,
+  "output": "SELECT name, monthly_fee FROM plan ORDER BY monthly_fee ASC LIMIT 3",
+  "input_tokens": 533,
+  "output_tokens": 16,
   "error": null,
-  "latency_ms": 2903.5
+  "latency_ms": 2937.3
 }

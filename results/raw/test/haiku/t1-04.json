@@ -4,11 +4,11 @@
   "split": "test",
   "model_key": "haiku",
   "model_name": "claude-haiku-4-5-20251001",
-  "timestamp": "2026-09-13T14:12:03.600805+00:00",
-  "prompt_chars": 2366,
-  "output": "SELECT name FROM model WHERE is_electric = 0;",
-  "input_tokens": 634,
-  "output_tokens": 15,
+  "timestamp": "2026-09-13T18:00:34.869328+00:00",
+  "prompt_chars": 2379,
+  "output": "SELECT ROUND(AVG(distance_km), 2) FROM trip;",
+  "input_tokens": 639,
+  "output_tokens": 20,
   "error": null,
-  "latency_ms": 646.3
+  "latency_ms": 1116.6
 }

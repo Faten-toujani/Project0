@@ -1,0 +1,14 @@
+{
+  "item_id": "t3-15",
+  "tier": 3,
+  "split": "test",
+  "model_key": "opus",
+  "model_name": "claude-opus-5",
+  "timestamp": "2026-09-13T17:59:56.551103+00:00",
+  "prompt_chars": 2507,
+  "output": "SELECT city, member_id, trips FROM (SELECT s.city AS city, t.member_id AS member_id, COUNT(*) AS trips, ROW_NUMBER() OVER (PARTITION BY s.city ORDER BY COUNT(*) DESC, t.member_id ASC) AS rn FROM trip t JOIN station s ON t.start_station_id = s.station_id GROUP BY s.city, t.member_id) WHERE rn = 1 ORDER BY city;",
+  "input_tokens": 1166,
+  "output_tokens": 376,
+  "error": null,
+  "latency_ms": 4721.3
+}

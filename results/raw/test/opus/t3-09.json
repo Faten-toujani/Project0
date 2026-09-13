@@ -4,11 +4,11 @@
   "split": "test",
   "model_key": "opus",
   "model_name": "claude-opus-5",
-  "timestamp": "2026-09-13T14:11:55.214282+00:00",
-  "prompt_chars": 2503,
-  "output": "SELECT s.name, MAX(julianday(m.resolved_on) - julianday(m.reported_on)) AS max_days FROM station s JOIN bike b ON b.station_id = s.station_id JOIN maintenance m ON m.bike_id = b.bike_id WHERE m.resolved_on IS NOT NULL GROUP BY s.station_id, s.name;",
-  "input_tokens": 1164,
-  "output_tokens": 128,
+  "timestamp": "2026-09-13T17:59:37.347343+00:00",
+  "prompt_chars": 2408,
+  "output": "SELECT member_id FROM trip WHERE started_at >= '2025-01-01' AND started_at < '2026-01-01' GROUP BY member_id HAVING COUNT(DISTINCT strftime('%Y-%m', started_at)) >= 4",
+  "input_tokens": 1142,
+  "output_tokens": 119,
   "error": null,
-  "latency_ms": 2640.0
+  "latency_ms": 2778.2
 }

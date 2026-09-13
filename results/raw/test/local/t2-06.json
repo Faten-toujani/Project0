@@ -4,11 +4,11 @@
   "split": "test",
   "model_key": "local",
   "model_name": "qwen2.5-coder:3b",
-  "timestamp": "2026-09-13T14:14:10.275043+00:00",
-  "prompt_chars": 2403,
-  "output": "SELECT m.name, COUNT(maint_id) AS maintenance_count\nFROM model m\nJOIN bike b ON m.model_id = b.model_id\nJOIN maintenance maint ON b.bike_id = maint.bike_id\nGROUP BY m.name",
-  "input_tokens": 533,
-  "output_tokens": 48,
+  "timestamp": "2026-09-13T18:02:35.597977+00:00",
+  "prompt_chars": 2471,
+  "output": "SELECT m.name, COUNT(maint_id) AS maintenance_count\nFROM model m\nLEFT JOIN bike b ON m.model_id = b.model_id\nLEFT JOIN maintenance maint ON b.bike_id = maint.bike_id\nGROUP BY m.model_id",
+  "input_tokens": 549,
+  "output_tokens": 51,
   "error": null,
-  "latency_ms": 3724.6
+  "latency_ms": 3755.4
 }

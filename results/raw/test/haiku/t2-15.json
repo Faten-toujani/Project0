@@ -4,11 +4,11 @@
   "split": "test",
   "model_key": "haiku",
   "model_name": "claude-haiku-4-5-20251001",
-  "timestamp": "2026-09-13T14:12:32.260585+00:00",
-  "prompt_chars": 2406,
-  "output": "SELECT substr(started_at, 1, 7) AS month, COUNT(*) AS num_trips FROM trip WHERE substr(started_at, 1, 4) = '2025' GROUP BY substr(started_at, 1, 7) ORDER BY month;",
-  "input_tokens": 648,
-  "output_tokens": 64,
+  "timestamp": "2026-09-13T18:00:57.495634+00:00",
+  "prompt_chars": 2462,
+  "output": "SELECT s.name, COUNT(CASE WHEN b.status = 'retired' THEN 1 END) as retired_bike_count\nFROM station s\nLEFT JOIN bike b ON s.station_id = b.station_id\nGROUP BY s.station_id, s.name;",
+  "input_tokens": 657,
+  "output_tokens": 69,
   "error": null,
-  "latency_ms": 1232.1
+  "latency_ms": 1278.5
 }

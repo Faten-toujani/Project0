@@ -4,11 +4,11 @@
   "split": "test",
   "model_key": "haiku",
   "model_name": "claude-haiku-4-5-20251001",
-  "timestamp": "2026-09-13T14:12:06.930456+00:00",
-  "prompt_chars": 2377,
-  "output": "SELECT DISTINCT method FROM payment;",
-  "input_tokens": 634,
-  "output_tokens": 10,
+  "timestamp": "2026-09-13T18:00:38.583828+00:00",
+  "prompt_chars": 2352,
+  "output": "SELECT COUNT(*) FROM trip WHERE end_station_id IS NULL;",
+  "input_tokens": 632,
+  "output_tokens": 18,
   "error": null,
-  "latency_ms": 795.0
+  "latency_ms": 641.1
 }

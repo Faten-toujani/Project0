@@ -1,0 +1,14 @@
+{
+  "item_id": "t3-18",
+  "tier": 3,
+  "split": "test",
+  "model_key": "local",
+  "model_name": "qwen2.5-coder:3b",
+  "timestamp": "2026-09-13T18:04:16.843893+00:00",
+  "prompt_chars": 2534,
+  "output": "SELECT T2.name, CAST(COUNT(CASE WHEN T3.end_station_id IS NOT NULL THEN 1 ELSE NULL END) AS REAL) * 100 / COUNT(T3.start_station_id) AS trip_share\nFROM trip AS T1\nJOIN station AS T2 ON T1.start_station_id = T2.station_id\nLEFT JOIN trip AS T3 ON T1.bike_id = T3.bike_id\nGROUP BY T2.name",
+  "input_tokens": 561,
+  "output_tokens": 94,
+  "error": null,
+  "latency_ms": 4824.1
+}

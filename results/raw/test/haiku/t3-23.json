@@ -1,0 +1,14 @@
+{
+  "item_id": "t3-23",
+  "tier": 3,
+  "split": "test",
+  "model_key": "haiku",
+  "model_name": "claude-haiku-4-5-20251001",
+  "timestamp": "2026-09-13T18:01:30.331958+00:00",
+  "prompt_chars": 2466,
+  "output": "SELECT DATE(trip.started_at) AS date, COUNT(*) AS trip_count FROM trip WHERE STRFTIME('%Y', trip.started_at) = '2025' GROUP BY DATE(trip.started_at) ORDER BY trip_count DESC, date ASC LIMIT 5;",
+  "input_tokens": 666,
+  "output_tokens": 67,
+  "error": null,
+  "latency_ms": 1457.6
+}

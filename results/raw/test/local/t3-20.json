@@ -1,0 +1,14 @@
+{
+  "item_id": "t3-20",
+  "tier": 3,
+  "split": "test",
+  "model_key": "local",
+  "model_name": "qwen2.5-coder:3b",
+  "timestamp": "2026-09-13T18:04:25.725942+00:00",
+  "prompt_chars": 2436,
+  "output": "SELECT member_id, DATEDIFF(MAX(ended_at), MIN(started_at)) AS trip_gap_days FROM trip GROUP BY member_id HAVING trip_gap_days > 500",
+  "input_tokens": 545,
+  "output_tokens": 38,
+  "error": null,
+  "latency_ms": 3418.7
+}

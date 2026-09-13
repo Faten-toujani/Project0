@@ -4,11 +4,11 @@
   "split": "test",
   "model_key": "haiku",
   "model_name": "claude-haiku-4-5-20251001",
-  "timestamp": "2026-09-13T14:12:45.771455+00:00",
-  "prompt_chars": 2406,
-  "output": "SELECT DISTINCT m.member_id FROM member m WHERE m.member_id IN (SELECT DISTINCT member_id FROM payment) AND m.member_id NOT IN (SELECT DISTINCT member_id FROM trip);",
-  "input_tokens": 644,
-  "output_tokens": 49,
+  "timestamp": "2026-09-13T18:01:08.149165+00:00",
+  "prompt_chars": 2445,
+  "output": "SELECT DISTINCT m.member_id, m.full_name\nFROM member m\nWHERE strftime('%Y', m.joined_on) = '2024'\nAND m.member_id IN (\n  SELECT t.member_id\n  FROM trip t\n  WHERE (julianday(t.started_at) - julianday(m.joined_on)) > 120\n  ORDER BY t.started_at\n  LIMIT 1\n);",
+  "input_tokens": 655,
+  "output_tokens": 106,
   "error": null,
-  "latency_ms": 1104.4
+  "latency_ms": 1723.3
 }

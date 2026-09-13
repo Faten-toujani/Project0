@@ -4,11 +4,11 @@
   "split": "test",
   "model_key": "local",
   "model_name": "qwen2.5-coder:3b",
-  "timestamp": "2026-09-13T14:13:01.184200+00:00",
-  "prompt_chars": 2387,
-  "output": "SELECT name, monthly_fee FROM plan WHERE monthly_fee > 20",
-  "input_tokens": 534,
-  "output_tokens": 15,
+  "timestamp": "2026-09-13T18:01:55.274507+00:00",
+  "prompt_chars": 2342,
+  "output": "SELECT COUNT(member_id) FROM member WHERE joined_on LIKE '2025%'",
+  "input_tokens": 526,
+  "output_tokens": 18,
   "error": null,
-  "latency_ms": 2901.3
+  "latency_ms": 2956.3
 }

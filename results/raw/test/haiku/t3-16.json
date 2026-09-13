@@ -1,0 +1,14 @@
+{
+  "item_id": "t3-16",
+  "tier": 3,
+  "split": "test",
+  "model_key": "haiku",
+  "model_name": "claude-haiku-4-5-20251001",
+  "timestamp": "2026-09-13T18:01:19.708428+00:00",
+  "prompt_chars": 2522,
+  "output": "SELECT\n    strftime('%Y-%m', t.started_at) AS month,\n    COUNT(*) AS trip_count,\n    COUNT(*) - LAG(COUNT(*)) OVER (ORDER BY strftime('%Y-%m', t.started_at)) AS change\nFROM trip t\nWHERE strftime('%Y', t.started_at) = '2025'\nGROUP BY strftime('%Y-%m', t.started_at)\nORDER BY month;",
+  "input_tokens": 674,
+  "output_tokens": 107,
+  "error": null,
+  "latency_ms": 1590.0
+}

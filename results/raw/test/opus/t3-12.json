@@ -1,0 +1,14 @@
+{
+  "item_id": "t3-12",
+  "tier": 3,
+  "split": "test",
+  "model_key": "opus",
+  "model_name": "claude-opus-5",
+  "timestamp": "2026-09-13T17:59:48.527167+00:00",
+  "prompt_chars": 2392,
+  "output": "SELECT DISTINCT m.bike_id FROM maintenance m WHERE m.resolved_on IS NULL AND m.reported_on = (SELECT MAX(m2.reported_on) FROM maintenance m2 WHERE m2.bike_id = m.bike_id);",
+  "input_tokens": 1140,
+  "output_tokens": 232,
+  "error": null,
+  "latency_ms": 3714.3
+}

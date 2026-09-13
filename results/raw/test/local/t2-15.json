@@ -4,11 +4,11 @@
   "split": "test",
   "model_key": "local",
   "model_name": "qwen2.5-coder:3b",
-  "timestamp": "2026-09-13T14:14:41.766596+00:00",
-  "prompt_chars": 2406,
-  "output": "SELECT strftime('%Y-%m', started_at) AS month, COUNT(*) AS trip_count FROM trip WHERE strftime('%Y', started_at) = '2025' GROUP BY month",
-  "input_tokens": 541,
-  "output_tokens": 39,
+  "timestamp": "2026-09-13T18:03:07.486758+00:00",
+  "prompt_chars": 2462,
+  "output": "SELECT s.name, COUNT(b.bike_id) AS retired_bikes_count\nFROM station s\nLEFT JOIN bike b ON s.station_id = b.station_id\nWHERE b.status = 'retired'\nGROUP BY s.name",
+  "input_tokens": 550,
+  "output_tokens": 46,
   "error": null,
-  "latency_ms": 3502.0
+  "latency_ms": 3672.9
 }

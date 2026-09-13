@@ -1,0 +1,14 @@
+{
+  "item_id": "t3-13",
+  "tier": 3,
+  "split": "test",
+  "model_key": "haiku",
+  "model_name": "claude-haiku-4-5-20251001",
+  "timestamp": "2026-09-13T18:01:15.236435+00:00",
+  "prompt_chars": 2400,
+  "output": "SELECT DISTINCT t1.member_id\nFROM trip t1\nWHERE (\n  SELECT COUNT(*)\n  FROM trip t2\n  WHERE t2.member_id = t1.member_id\n  AND DATE(t2.started_at) = DATE(t1.started_at)\n) >= 2;",
+  "input_tokens": 645,
+  "output_tokens": 76,
+  "error": null,
+  "latency_ms": 1660.8
+}

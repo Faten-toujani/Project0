@@ -1,0 +1,14 @@
+{
+  "item_id": "t3-11",
+  "tier": 3,
+  "split": "test",
+  "model_key": "haiku",
+  "model_name": "claude-haiku-4-5-20251001",
+  "timestamp": "2026-09-13T18:01:12.077370+00:00",
+  "prompt_chars": 2469,
+  "output": "SELECT m.name, ROUND(100.0 * COUNT(DISTINCT CASE WHEN maint.maint_id IS NOT NULL THEN b.bike_id END) / COUNT(DISTINCT b.bike_id), 1) AS maintenance_percentage FROM model m LEFT JOIN bike b ON m.model_id = b.model_id LEFT JOIN maintenance maint ON b.bike_id = maint.bike_id GROUP BY m.model_id, m.name;",
+  "input_tokens": 656,
+  "output_tokens": 110,
+  "error": null,
+  "latency_ms": 1641.2
+}

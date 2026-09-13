@@ -4,11 +4,11 @@
   "split": "test",
   "model_key": "local",
   "model_name": "qwen2.5-coder:3b",
-  "timestamp": "2026-09-13T14:15:24.198673+00:00",
-  "prompt_chars": 2388,
-  "output": "SELECT name, capacity FROM station ORDER BY capacity DESC LIMIT 1 OFFSET 1",
-  "input_tokens": 530,
-  "output_tokens": 17,
+  "timestamp": "2026-09-13T18:03:34.298312+00:00",
+  "prompt_chars": 2499,
+  "output": "SELECT T2.name, MAX(T1.resolved_on - T1.reported_on) AS longest_days\nFROM maintenance AS T1\nJOIN bike AS T2 ON T1.bike_id = T2.bike_id\nWHERE T1.resolved_on IS NOT NULL\nGROUP BY T2.station_id\nHAVING COUNT(T1.resolved_on) > 0",
+  "input_tokens": 549,
+  "output_tokens": 76,
   "error": null,
-  "latency_ms": 2999.5
+  "latency_ms": 4321.0
 }

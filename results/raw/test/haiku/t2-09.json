@@ -4,11 +4,11 @@
   "split": "test",
   "model_key": "haiku",
   "model_name": "claude-haiku-4-5-20251001",
-  "timestamp": "2026-09-13T14:12:26.158894+00:00",
+  "timestamp": "2026-09-13T18:00:50.024314+00:00",
   "prompt_chars": 2377,
-  "output": "SELECT COUNT(DISTINCT m.member_id) FROM member m JOIN payment p ON m.member_id = p.member_id WHERE strftime('%Y', m.joined_on) = '2025';",
+  "output": "SELECT COUNT(DISTINCT m.member_id) FROM member m WHERE strftime('%Y', m.joined_on) = '2025' AND EXISTS (SELECT 1 FROM payment p WHERE p.member_id = m.member_id);",
   "input_tokens": 639,
-  "output_tokens": 49,
+  "output_tokens": 57,
   "error": null,
-  "latency_ms": 1070.3
+  "latency_ms": 1266.4
 }

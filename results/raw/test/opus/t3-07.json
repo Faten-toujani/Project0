@@ -4,11 +4,11 @@
   "split": "test",
   "model_key": "opus",
   "model_name": "claude-opus-5",
-  "timestamp": "2026-09-13T14:11:50.801705+00:00",
-  "prompt_chars": 2388,
-  "output": "SELECT name, capacity FROM station ORDER BY capacity DESC LIMIT 1 OFFSET 1",
-  "input_tokens": 1134,
-  "output_tokens": 42,
+  "timestamp": "2026-09-13T17:59:29.643079+00:00",
+  "prompt_chars": 2499,
+  "output": "SELECT s.name AS station_name, MAX(julianday(m.resolved_on) - julianday(m.reported_on)) AS longest_days FROM station s JOIN bike b ON b.station_id = s.station_id JOIN maintenance m ON m.bike_id = b.bike_id WHERE m.resolved_on IS NOT NULL GROUP BY s.station_id, s.name ORDER BY longest_days DESC;",
+  "input_tokens": 1161,
+  "output_tokens": 206,
   "error": null,
-  "latency_ms": 2200.8
+  "latency_ms": 3140.5
 }

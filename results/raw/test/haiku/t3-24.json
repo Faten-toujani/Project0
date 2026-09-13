@@ -1,0 +1,14 @@
+{
+  "item_id": "t3-24",
+  "tier": 3,
+  "split": "test",
+  "model_key": "haiku",
+  "model_name": "claude-haiku-4-5-20251001",
+  "timestamp": "2026-09-13T18:01:31.789703+00:00",
+  "prompt_chars": 2504,
+  "output": "SELECT s.city, COALESCE(SUM(m.cost), 0) as total_resolved_cost\nFROM station s\nLEFT JOIN bike b ON s.station_id = b.station_id\nLEFT JOIN maintenance m ON b.bike_id = m.bike_id AND m.resolved_on IS NOT NULL\nGROUP BY s.city;",
+  "input_tokens": 664,
+  "output_tokens": 83,
+  "error": null,
+  "latency_ms": 1501.7
+}

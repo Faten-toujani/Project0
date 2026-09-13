@@ -1,0 +1,14 @@
+{
+  "item_id": "t3-12",
+  "tier": 3,
+  "split": "test",
+  "model_key": "haiku",
+  "model_name": "claude-haiku-4-5-20251001",
+  "timestamp": "2026-09-13T18:01:13.718250+00:00",
+  "prompt_chars": 2392,
+  "output": "SELECT DISTINCT b.bike_id\nFROM bike b\nWHERE EXISTS (\n  SELECT 1\n  FROM maintenance m\n  WHERE m.bike_id = b.bike_id\n  AND m.resolved_on IS NULL\n  AND m.maint_id = (\n    SELECT MAX(maint_id)\n    FROM maintenance\n    WHERE bike_id = b.bike_id\n  )\n);",
+  "input_tokens": 640,
+  "output_tokens": 95,
+  "error": null,
+  "latency_ms": 1516.5
+}

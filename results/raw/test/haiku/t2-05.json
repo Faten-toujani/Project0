@@ -4,11 +4,11 @@
   "split": "test",
   "model_key": "haiku",
   "model_name": "claude-haiku-4-5-20251001",
-  "timestamp": "2026-09-13T14:12:22.323911+00:00",
-  "prompt_chars": 2383,
-  "output": "SELECT COUNT(*) FROM trip WHERE start_station_id != end_station_id;",
-  "input_tokens": 637,
-  "output_tokens": 22,
+  "timestamp": "2026-09-13T18:00:45.587995+00:00",
+  "prompt_chars": 2435,
+  "output": "SELECT COUNT(*) FROM trip WHERE end_station_id IS NOT NULL AND end_station_id != start_station_id;",
+  "input_tokens": 650,
+  "output_tokens": 31,
   "error": null,
-  "latency_ms": 850.5
+  "latency_ms": 1133.5
 }

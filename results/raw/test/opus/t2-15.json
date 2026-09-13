@@ -4,11 +4,11 @@
   "split": "test",
   "model_key": "opus",
   "model_name": "claude-opus-5",
-  "timestamp": "2026-09-13T14:11:17.937999+00:00",
-  "prompt_chars": 2406,
-  "output": "strftime('%Y-%m', started_at) AS month, COUNT(*) AS trip_count FROM trip WHERE started_at >= '2025-01-01' AND started_at < '2026-01-01' GROUP BY month ORDER BY month",
-  "input_tokens": 1145,
-  "output_tokens": 84,
+  "timestamp": "2026-09-13T17:59:04.723232+00:00",
+  "prompt_chars": 2462,
+  "output": "```sql\nSELECT s.name, COUNT(b.bike_id) AS retired_bikes\nFROM station s\nLEFT JOIN bike b ON b.station_id = s.station_id AND b.status = 'retired'\nGROUP BY s.station_id, s.name;\n```",
+  "input_tokens": 1157,
+  "output_tokens": 95,
   "error": null,
-  "latency_ms": 2206.8
+  "latency_ms": 2075.4
 }

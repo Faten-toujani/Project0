@@ -1,0 +1,14 @@
+{
+  "item_id": "t3-16",
+  "tier": 3,
+  "split": "test",
+  "model_key": "opus",
+  "model_name": "claude-opus-5",
+  "timestamp": "2026-09-13T18:00:01.285636+00:00",
+  "prompt_chars": 2522,
+  "output": "SELECT strftime('%Y-%m', started_at) AS month, COUNT(*) AS trip_count, COUNT(*) - LAG(COUNT(*)) OVER (ORDER BY strftime('%Y-%m', started_at)) AS change_from_prev_month FROM trip WHERE strftime('%Y', started_at) = '2025' GROUP BY month ORDER BY month;",
+  "input_tokens": 1176,
+  "output_tokens": 136,
+  "error": null,
+  "latency_ms": 2608.7
+}

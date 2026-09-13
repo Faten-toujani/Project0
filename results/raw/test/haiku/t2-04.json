@@ -4,11 +4,11 @@
   "split": "test",
   "model_key": "haiku",
   "model_name": "claude-haiku-4-5-20251001",
-  "timestamp": "2026-09-13T14:12:21.162421+00:00",
-  "prompt_chars": 2430,
-  "output": "SELECT s.name, ROUND(AVG(t.distance_km), 2) FROM station s JOIN trip t ON s.station_id = t.start_station_id GROUP BY s.station_id, s.name;",
-  "input_tokens": 647,
-  "output_tokens": 55,
+  "timestamp": "2026-09-13T18:00:44.314681+00:00",
+  "prompt_chars": 2455,
+  "output": "SELECT s.name, ROUND(AVG(t.distance_km), 2) AS avg_distance FROM station s JOIN trip t ON s.station_id = t.start_station_id GROUP BY s.station_id, s.name;",
+  "input_tokens": 653,
+  "output_tokens": 59,
   "error": null,
-  "latency_ms": 1158.7
+  "latency_ms": 1271.3
 }

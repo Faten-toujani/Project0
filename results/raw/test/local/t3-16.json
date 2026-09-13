@@ -1,0 +1,14 @@
+{
+  "item_id": "t3-16",
+  "tier": 3,
+  "split": "test",
+  "model_key": "local",
+  "model_name": "qwen2.5-coder:3b",
+  "timestamp": "2026-09-13T18:04:08.056866+00:00",
+  "prompt_chars": 2522,
+  "output": "SELECT strftime('%Y-%m', started_at) AS month, COUNT(*) AS trip_count, \n       LAG(COUNT(*), 1) OVER (ORDER BY strftime('%Y-%m', started_at)) AS prev_month_trip_count,\n       (COUNT(*) - LAG(COUNT(*), 1) OVER (ORDER BY strftime('%Y-%m', started_at))) AS change_in_trip_count\nFROM trip\nWHERE strftime('%Y', started_at) = '2025'\nGROUP BY strftime('%Y-%m', started_at)\nORDER BY strftime('%Y-%m', started_at);",
+  "input_tokens": 567,
+  "output_tokens": 123,
+  "error": null,
+  "latency_ms": 5461.4
+}

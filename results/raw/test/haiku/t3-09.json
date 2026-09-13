@@ -4,11 +4,11 @@
   "split": "test",
   "model_key": "haiku",
   "model_name": "claude-haiku-4-5-20251001",
-  "timestamp": "2026-09-13T14:12:46.876749+00:00",
-  "prompt_chars": 2503,
-  "output": "SELECT s.name, MAX(julianday(m.resolved_on) - julianday(m.reported_on)) as longest_days\nFROM station s\nJOIN bike b ON s.station_id = b.station_id\nJOIN maintenance m ON b.bike_id = m.bike_id\nWHERE m.resolved_on IS NOT NULL\nGROUP BY s.station_id, s.name;",
-  "input_tokens": 659,
-  "output_tokens": 94,
+  "timestamp": "2026-09-13T18:01:09.873493+00:00",
+  "prompt_chars": 2408,
+  "output": "SELECT member_id FROM trip WHERE strftime('%Y', started_at) = '2025' GROUP BY member_id HAVING COUNT(DISTINCT strftime('%m', started_at)) >= 4;",
+  "input_tokens": 647,
+  "output_tokens": 48,
   "error": null,
-  "latency_ms": 1206.0
+  "latency_ms": 1221.4
 }

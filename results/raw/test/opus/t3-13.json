@@ -1,0 +1,14 @@
+{
+  "item_id": "t3-13",
+  "tier": 3,
+  "split": "test",
+  "model_key": "opus",
+  "model_name": "claude-opus-5",
+  "timestamp": "2026-09-13T17:59:52.242369+00:00",
+  "prompt_chars": 2400,
+  "output": "SELECT DISTINCT member_id FROM trip GROUP BY member_id, date(started_at) HAVING COUNT(*) >= 2;",
+  "input_tokens": 1141,
+  "output_tokens": 52,
+  "error": null,
+  "latency_ms": 2275.3
+}

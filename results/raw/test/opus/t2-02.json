@@ -4,11 +4,11 @@
   "split": "test",
   "model_key": "opus",
   "model_name": "claude-opus-5",
-  "timestamp": "2026-09-13T14:10:46.758760+00:00",
-  "prompt_chars": 2385,
-  "output": "SELECT p.name, SUM(pay.amount) AS total_paid FROM plan p LEFT JOIN member m ON m.plan_id = p.plan_id LEFT JOIN payment pay ON pay.member_id = m.member_id GROUP BY p.plan_id, p.name;",
-  "input_tokens": 1134,
-  "output_tokens": 100,
+  "timestamp": "2026-09-13T17:58:32.666131+00:00",
+  "prompt_chars": 2479,
+  "output": "SELECT p.name, COALESCE(SUM(pay.amount), 0) AS total_paid FROM plan p LEFT JOIN member m ON m.plan_id = p.plan_id LEFT JOIN payment pay ON pay.member_id = m.member_id GROUP BY p.plan_id, p.name",
+  "input_tokens": 1161,
+  "output_tokens": 108,
   "error": null,
-  "latency_ms": 2326.7
+  "latency_ms": 2061.0
 }

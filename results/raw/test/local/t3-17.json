@@ -1,0 +1,14 @@
+{
+  "item_id": "t3-17",
+  "tier": 3,
+  "split": "test",
+  "model_key": "local",
+  "model_name": "qwen2.5-coder:3b",
+  "timestamp": "2026-09-13T18:04:13.518803+00:00",
+  "prompt_chars": 2440,
+  "output": "SELECT trip_id FROM trip WHERE distance_km > (SELECT AVG(distance_km) FROM trip WHERE start_station_id = trip.start_station_id) * 2",
+  "input_tokens": 540,
+  "output_tokens": 31,
+  "error": null,
+  "latency_ms": 3324.3
+}

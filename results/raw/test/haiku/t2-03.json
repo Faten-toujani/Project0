@@ -4,11 +4,11 @@
   "split": "test",
   "model_key": "haiku",
   "model_name": "claude-haiku-4-5-20251001",
-  "timestamp": "2026-09-13T14:12:19.864082+00:00",
-  "prompt_chars": 2389,
-  "output": "SELECT manufacturer FROM model WHERE model_id IN (SELECT model_id FROM bike GROUP BY model_id ORDER BY COUNT(*) DESC LIMIT 1) LIMIT 1;",
-  "input_tokens": 637,
-  "output_tokens": 40,
+  "timestamp": "2026-09-13T18:00:43.372361+00:00",
+  "prompt_chars": 2394,
+  "output": "SELECT manufacturer FROM model WHERE model_id IN (SELECT model_id FROM bike) GROUP BY manufacturer ORDER BY COUNT(*) DESC LIMIT 1;",
+  "input_tokens": 638,
+  "output_tokens": 34,
   "error": null,
-  "latency_ms": 1295.9
+  "latency_ms": 939.9
 }

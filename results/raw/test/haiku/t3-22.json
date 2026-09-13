@@ -1,0 +1,14 @@
+{
+  "item_id": "t3-22",
+  "tier": 3,
+  "split": "test",
+  "model_key": "haiku",
+  "model_name": "claude-haiku-4-5-20251001",
+  "timestamp": "2026-09-13T18:01:28.940744+00:00",
+  "prompt_chars": 2478,
+  "output": "SELECT issue, ROUND(AVG(CAST((julianday(resolved_on) - julianday(reported_on)) AS REAL)), 2) AS avg_resolution_days FROM maintenance WHERE resolved_on IS NOT NULL GROUP BY issue ORDER BY avg_resolution_days DESC LIMIT 1;",
+  "input_tokens": 653,
+  "output_tokens": 70,
+  "error": null,
+  "latency_ms": 1390.0
+}

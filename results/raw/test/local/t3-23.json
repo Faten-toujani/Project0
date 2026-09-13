@@ -1,0 +1,14 @@
+{
+  "item_id": "t3-23",
+  "tier": 3,
+  "split": "test",
+  "model_key": "local",
+  "model_name": "qwen2.5-coder:3b",
+  "timestamp": "2026-09-13T18:04:36.357006+00:00",
+  "prompt_chars": 2466,
+  "output": "SELECT DATE(started_at) AS date, COUNT(*) AS trip_count\nFROM trip\nWHERE strftime('%Y', started_at) = '2025'\nGROUP BY date\nORDER BY trip_count DESC, date ASC\nLIMIT 5",
+  "input_tokens": 554,
+  "output_tokens": 50,
+  "error": null,
+  "latency_ms": 3737.5
+}

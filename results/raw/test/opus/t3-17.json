@@ -1,0 +1,14 @@
+{
+  "item_id": "t3-17",
+  "tier": 3,
+  "split": "test",
+  "model_key": "opus",
+  "model_name": "claude-opus-5",
+  "timestamp": "2026-09-13T18:00:03.895473+00:00",
+  "prompt_chars": 2440,
+  "output": "```sql\nSELECT t.trip_id\nFROM trip t\nWHERE t.distance_km > 2 * (\n    SELECT AVG(t2.distance_km)\n    FROM trip t2\n    WHERE t2.start_station_id = t.start_station_id\n);\n```",
+  "input_tokens": 1148,
+  "output_tokens": 93,
+  "error": null,
+  "latency_ms": 1784.6
+}

@@ -4,11 +4,11 @@
   "split": "test",
   "model_key": "haiku",
   "model_name": "claude-haiku-4-5-20251001",
-  "timestamp": "2026-09-13T14:12:28.081108+00:00",
-  "prompt_chars": 2396,
-  "output": "SELECT method, COUNT(*) as number_of_payments, SUM(amount) as total_amount FROM payment GROUP BY method;",
-  "input_tokens": 640,
-  "output_tokens": 31,
+  "timestamp": "2026-09-13T18:00:52.270794+00:00",
+  "prompt_chars": 2424,
+  "output": "SELECT m.name, SUM(t.distance_km) as total_distance FROM model m JOIN bike b ON m.model_id = b.model_id JOIN trip t ON b.bike_id = t.bike_id GROUP BY m.model_id, m.name ORDER BY total_distance DESC LIMIT 3;",
+  "input_tokens": 647,
+  "output_tokens": 76,
   "error": null,
-  "latency_ms": 923.9
+  "latency_ms": 1795.4
 }

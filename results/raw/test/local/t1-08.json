@@ -4,11 +4,11 @@
   "split": "test",
   "model_key": "local",
   "model_name": "qwen2.5-coder:3b",
-  "timestamp": "2026-09-13T14:13:15.569844+00:00",
-  "prompt_chars": 2377,
-  "output": "SELECT DISTINCT method FROM payment",
-  "input_tokens": 527,
-  "output_tokens": 6,
+  "timestamp": "2026-09-13T18:02:09.755953+00:00",
+  "prompt_chars": 2352,
+  "output": "SELECT COUNT(trip_id) FROM trip WHERE end_station_id IS NULL",
+  "input_tokens": 525,
+  "output_tokens": 15,
   "error": null,
-  "latency_ms": 2690.3
+  "latency_ms": 2890.2
 }

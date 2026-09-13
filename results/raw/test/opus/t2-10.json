@@ -4,11 +4,11 @@
   "split": "test",
   "model_key": "opus",
   "model_name": "claude-opus-5",
-  "timestamp": "2026-09-13T14:11:06.308857+00:00",
-  "prompt_chars": 2391,
-  "output": "SELECT s.name FROM trip t JOIN station s ON t.start_station_id = s.station_id GROUP BY t.start_station_id, s.name ORDER BY COUNT(*) DESC LIMIT 1;",
-  "input_tokens": 1133,
-  "output_tokens": 77,
+  "timestamp": "2026-09-13T17:58:53.724740+00:00",
+  "prompt_chars": 2396,
+  "output": "```sql\nSELECT method, COUNT(*) AS payment_count, SUM(amount) AS total_amount FROM payment GROUP BY method;\n```",
+  "input_tokens": 1134,
+  "output_tokens": 54,
   "error": null,
-  "latency_ms": 2287.9
+  "latency_ms": 2121.3
 }

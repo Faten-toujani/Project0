@@ -4,11 +4,11 @@
   "split": "test",
   "model_key": "opus",
   "model_name": "claude-opus-5",
-  "timestamp": "2026-09-13T14:11:44.351618+00:00",
-  "prompt_chars": 2394,
-  "output": "SELECT bike_id FROM maintenance WHERE resolved_on IS NULL GROUP BY bike_id HAVING COUNT(*) > 1;",
-  "input_tokens": 1139,
-  "output_tokens": 130,
+  "timestamp": "2026-09-13T17:59:22.310930+00:00",
+  "prompt_chars": 2459,
+  "output": "SELECT p.name AS plan_name, ROUND(100.0 * COUNT(DISTINCT t.member_id) / NULLIF(COUNT(DISTINCT m.member_id), 0), 1) AS pct_members_with_trip FROM plan p LEFT JOIN member m ON m.plan_id = p.plan_id LEFT JOIN trip t ON t.member_id = m.member_id GROUP BY p.plan_id, p.name ORDER BY p.name;",
+  "input_tokens": 1159,
+  "output_tokens": 336,
   "error": null,
-  "latency_ms": 2533.0
+  "latency_ms": 4791.4
 }

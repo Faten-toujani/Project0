@@ -4,11 +4,11 @@
   "split": "test",
   "model_key": "local",
   "model_name": "qwen2.5-coder:3b",
-  "timestamp": "2026-09-13T14:15:20.059887+00:00",
-  "prompt_chars": 2439,
-  "output": "SELECT p.name, ROUND(COUNT(CASE WHEN m.member_id IN (SELECT member_id FROM trip) THEN 1 ELSE NULL END) * 100.0 / COUNT(m.member_id), 1) AS trip_percentage\nFROM plan p\nJOIN member m ON p.plan_id = m.plan_id\nGROUP BY p.name",
-  "input_tokens": 544,
-  "output_tokens": 69,
+  "timestamp": "2026-09-13T18:03:31.031987+00:00",
+  "prompt_chars": 2406,
+  "output": "SELECT member_id FROM member WHERE member_id NOT IN (SELECT member_id FROM trip) AND member_id IN (SELECT member_id FROM payment)",
+  "input_tokens": 536,
+  "output_tokens": 29,
   "error": null,
-  "latency_ms": 4137.9
+  "latency_ms": 3265.0
 }

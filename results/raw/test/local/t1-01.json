@@ -4,11 +4,11 @@
   "split": "test",
   "model_key": "local",
   "model_name": "qwen2.5-coder:3b",
-  "timestamp": "2026-09-13T14:12:55.691278+00:00",
+  "timestamp": "2026-09-13T18:01:49.854012+00:00",
   "prompt_chars": 2372,
   "output": "SELECT name FROM station WHERE city = 'Lyon' ORDER BY name ASC",
   "input_tokens": 528,
   "output_tokens": 16,
   "error": null,
-  "latency_ms": 2634.5
+  "latency_ms": 2588.7
 }

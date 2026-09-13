@@ -4,11 +4,11 @@
   "split": "test",
   "model_key": "local",
   "model_name": "qwen2.5-coder:3b",
-  "timestamp": "2026-09-13T14:15:12.706428+00:00",
-  "prompt_chars": 2440,
-  "output": "SELECT m.name, ROUND(SUM(maintenance.cost) / COUNT(bike.bike_id), 2) AS avg_cost\nFROM bike\nJOIN maintenance ON bike.bike_id = maintenance.bike_id\nJOIN model m ON bike.model_id = m.model_id\nGROUP BY m.model_id\nORDER BY avg_cost DESC\nLIMIT 1",
-  "input_tokens": 541,
-  "output_tokens": 70,
+  "timestamp": "2026-09-13T18:03:22.230902+00:00",
+  "prompt_chars": 2513,
+  "output": "SELECT m.name, ROUND(SUM(m.cost) / COUNT(b.bike_id), 2) AS total_cost_ratio\nFROM maintenance m\nJOIN bike b ON m.bike_id = b.bike_id\nGROUP BY m.model_id\nHAVING COUNT(m.bike_id) > 0\nORDER BY total_cost_ratio DESC\nLIMIT 1",
+  "input_tokens": 553,
+  "output_tokens": 72,
   "error": null,
-  "latency_ms": 4258.8
+  "latency_ms": 4409.0
 }

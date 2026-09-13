@@ -4,11 +4,11 @@
   "split": "test",
   "model_key": "haiku",
   "model_name": "claude-haiku-4-5-20251001",
-  "timestamp": "2026-09-13T14:12:17.183690+00:00",
-  "prompt_chars": 2436,
-  "output": "SELECT s.name, COUNT(b.bike_id) as bike_count FROM station s LEFT JOIN bike b ON s.station_id = b.station_id GROUP BY s.station_id, s.name ORDER BY s.station_id;",
-  "input_tokens": 647,
-  "output_tokens": 58,
+  "timestamp": "2026-09-13T18:00:41.198905+00:00",
+  "prompt_chars": 2455,
+  "output": "SELECT s.name, COUNT(b.bike_id) as bike_count\nFROM station s\nLEFT JOIN bike b ON s.station_id = b.station_id\nGROUP BY s.station_id, s.name\nORDER BY s.station_id;",
+  "input_tokens": 654,
+  "output_tokens": 62,
   "error": null,
-  "latency_ms": 1093.2
+  "latency_ms": 1032.7
 }

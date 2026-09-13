@@ -4,11 +4,11 @@
   "split": "test",
   "model_key": "opus",
   "model_name": "claude-opus-5",
-  "timestamp": "2026-09-13T14:11:13.511000+00:00",
-  "prompt_chars": 2397,
-  "output": "SELECT s.city, COUNT(t.trip_id) AS trip_count FROM station s LEFT JOIN trip t ON t.start_station_id = s.station_id GROUP BY s.city;",
-  "input_tokens": 1133,
-  "output_tokens": 69,
+  "timestamp": "2026-09-13T17:59:00.408887+00:00",
+  "prompt_chars": 2406,
+  "output": "strftime('%Y-%m', started_at) AS month, COUNT(*) AS trip_count FROM trip WHERE started_at >= '2025-01-01' AND started_at < '2026-01-01' GROUP BY month ORDER BY month",
+  "input_tokens": 1145,
+  "output_tokens": 84,
   "error": null,
-  "latency_ms": 1983.3
+  "latency_ms": 2063.8
 }

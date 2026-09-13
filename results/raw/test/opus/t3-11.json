@@ -1,0 +1,14 @@
+{
+  "item_id": "t3-11",
+  "tier": 3,
+  "split": "test",
+  "model_key": "opus",
+  "model_name": "claude-opus-5",
+  "timestamp": "2026-09-13T17:59:43.301164+00:00",
+  "prompt_chars": 2469,
+  "output": "SELECT mo.name AS model_name, ROUND(100.0 * COUNT(DISTINCT CASE WHEN mt.bike_id IS NOT NULL THEN b.bike_id END) / COUNT(DISTINCT b.bike_id), 1) AS pct_with_maintenance FROM model mo LEFT JOIN bike b ON b.model_id = mo.model_id LEFT JOIN maintenance mt ON mt.bike_id = b.bike_id GROUP BY mo.model_id, mo.name ORDER BY mo.name;",
+  "input_tokens": 1159,
+  "output_tokens": 384,
+  "error": null,
+  "latency_ms": 5225.7
+}

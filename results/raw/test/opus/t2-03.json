@@ -4,11 +4,11 @@
   "split": "test",
   "model_key": "opus",
   "model_name": "claude-opus-5",
-  "timestamp": "2026-09-13T14:10:49.086388+00:00",
-  "prompt_chars": 2389,
-  "output": "SELECT m.manufacturer FROM bike b JOIN model m ON b.model_id = m.model_id GROUP BY m.manufacturer ORDER BY COUNT(*) DESC LIMIT 1",
-  "input_tokens": 1142,
-  "output_tokens": 74,
+  "timestamp": "2026-09-13T17:58:34.728271+00:00",
+  "prompt_chars": 2394,
+  "output": "SELECT m.manufacturer FROM bike b JOIN model m ON b.model_id = m.model_id GROUP BY m.manufacturer ORDER BY COUNT(*) DESC LIMIT 1;",
+  "input_tokens": 1143,
+  "output_tokens": 75,
   "error": null,
-  "latency_ms": 2310.4
+  "latency_ms": 2100.8
 }

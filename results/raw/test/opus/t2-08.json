@@ -4,11 +4,11 @@
   "split": "test",
   "model_key": "opus",
   "model_name": "claude-opus-5",
-  "timestamp": "2026-09-13T14:11:01.380797+00:00",
-  "prompt_chars": 2398,
-  "output": "SELECT s.name, SUM(m.cost) AS total_maintenance_cost FROM station s JOIN bike b ON b.station_id = s.station_id JOIN maintenance m ON m.bike_id = b.bike_id GROUP BY s.station_id, s.name;",
-  "input_tokens": 1138,
-  "output_tokens": 120,
+  "timestamp": "2026-09-13T17:58:47.475532+00:00",
+  "prompt_chars": 2514,
+  "output": "SELECT s.name, SUM(m.cost) AS total_cost FROM station s JOIN bike b ON b.station_id = s.station_id JOIN maintenance m ON m.bike_id = b.bike_id WHERE m.resolved_on IS NOT NULL AND m.cost IS NOT NULL GROUP BY s.station_id, s.name;",
+  "input_tokens": 1173,
+  "output_tokens": 274,
   "error": null,
-  "latency_ms": 2586.1
+  "latency_ms": 4309.4
 }

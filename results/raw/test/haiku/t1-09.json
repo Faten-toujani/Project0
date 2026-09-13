@@ -4,11 +4,11 @@
   "split": "test",
   "model_key": "haiku",
   "model_name": "claude-haiku-4-5-20251001",
-  "timestamp": "2026-09-13T14:12:07.726395+00:00",
-  "prompt_chars": 2362,
-  "output": "SELECT COUNT(*) FROM bike WHERE purchased_on < '2024-01-01';",
-  "input_tokens": 636,
-  "output_tokens": 22,
+  "timestamp": "2026-09-13T18:00:39.226001+00:00",
+  "prompt_chars": 2390,
+  "output": "SELECT trip_id, distance_km FROM trip ORDER BY distance_km DESC LIMIT 5;",
+  "input_tokens": 642,
+  "output_tokens": 24,
   "error": null,
-  "latency_ms": 684.2
+  "latency_ms": 934.3
 }

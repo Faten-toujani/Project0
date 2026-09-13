@@ -1,0 +1,14 @@
+{
+  "item_id": "t3-15",
+  "tier": 3,
+  "split": "test",
+  "model_key": "haiku",
+  "model_name": "claude-haiku-4-5-20251001",
+  "timestamp": "2026-09-13T18:01:17.860869+00:00",
+  "prompt_chars": 2507,
+  "output": "SELECT \n    s.city,\n    t.member_id,\n    COUNT(*) as trip_count\nFROM trip t\nJOIN station s ON t.start_station_id = s.station_id\nGROUP BY s.city, t.member_id\nHAVING COUNT(*) = (\n    SELECT MAX(trip_cnt)\n    FROM (\n        SELECT COUNT(*) as trip_cnt\n        FROM trip t2\n        JOIN station s2 ON t2.start_station_id = s2.station_id\n        WHERE s2.city = s.city\n        GROUP BY t2.member_id\n    )\n)\nORDER BY s.city, t.member_id;",
+  "input_tokens": 668,
+  "output_tokens": 161,
+  "error": null,
+  "latency_ms": 1845.7
+}

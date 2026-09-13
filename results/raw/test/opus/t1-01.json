@@ -4,11 +4,11 @@
   "split": "test",
   "model_key": "opus",
   "model_name": "claude-opus-5",
-  "timestamp": "2026-09-13T14:10:02.936135+00:00",
+  "timestamp": "2026-09-13T17:58:10.055395+00:00",
   "prompt_chars": 2372,
   "output": "SELECT name FROM station WHERE city = 'Lyon' ORDER BY name;",
   "input_tokens": 1134,
   "output_tokens": 32,
   "error": null,
-  "latency_ms": 2502.5
+  "latency_ms": 2474.9
 }

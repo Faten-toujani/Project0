@@ -4,11 +4,11 @@
   "split": "test",
   "model_key": "haiku",
   "model_name": "claude-haiku-4-5-20251001",
-  "timestamp": "2026-09-13T14:12:18.279344+00:00",
-  "prompt_chars": 2385,
-  "output": "SELECT p.name, SUM(py.amount) AS total_amount\nFROM plan p\nLEFT JOIN member m ON p.plan_id = m.plan_id\nLEFT JOIN payment py ON m.member_id = py.member_id\nGROUP BY p.plan_id, p.name;",
-  "input_tokens": 639,
-  "output_tokens": 70,
+  "timestamp": "2026-09-13T18:00:42.233347+00:00",
+  "prompt_chars": 2479,
+  "output": "SELECT p.name, COALESCE(SUM(py.amount), 0) as total_amount_paid FROM plan p LEFT JOIN member m ON p.plan_id = m.plan_id LEFT JOIN payment py ON m.member_id = py.member_id GROUP BY p.plan_id, p.name;",
+  "input_tokens": 661,
+  "output_tokens": 76,
   "error": null,
-  "latency_ms": 1584.2
+  "latency_ms": 1137.8
 }

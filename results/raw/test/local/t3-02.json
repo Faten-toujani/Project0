@@ -4,11 +4,11 @@
   "split": "test",
   "model_key": "local",
   "model_name": "qwen2.5-coder:3b",
-  "timestamp": "2026-09-13T14:15:05.188537+00:00",
-  "prompt_chars": 2431,
-  "output": "SELECT s.name, COUNT(CASE WHEN t.start_station_id = s.station_id THEN 1 END) AS trips_started, COUNT(CASE WHEN t.end_station_id = s.station_id THEN 1 END) AS trips_ended FROM station s JOIN trip t ON s.station_id = t.start_station_id OR s.station_id = t.end_station_id GROUP BY s.station_id",
-  "input_tokens": 540,
-  "output_tokens": 76,
+  "timestamp": "2026-09-13T18:03:14.429933+00:00",
+  "prompt_chars": 2454,
+  "output": "SELECT s.name, COUNT(CASE WHEN t.start_station_id = s.station_id THEN 1 END) AS trips_started, COUNT(CASE WHEN t.end_station_id = s.station_id THEN 1 END) AS trips_ended FROM station s LEFT JOIN trip t ON s.station_id = t.start_station_id OR s.station_id = t.end_station_id GROUP BY s.station_id",
+  "input_tokens": 544,
+  "output_tokens": 77,
   "error": null,
-  "latency_ms": 4284.5
+  "latency_ms": 4543.2
 }

@@ -4,11 +4,11 @@
   "split": "test",
   "model_key": "haiku",
   "model_name": "claude-haiku-4-5-20251001",
-  "timestamp": "2026-09-13T14:12:39.414515+00:00",
-  "prompt_chars": 2431,
-  "output": "SELECT s.name, COUNT(CASE WHEN t.start_station_id = s.station_id THEN 1 END) AS trips_started, COUNT(CASE WHEN t.end_station_id = s.station_id THEN 1 END) AS trips_ended FROM station s LEFT JOIN trip t ON s.station_id = t.start_station_id OR s.station_id = t.end_station_id GROUP BY s.station_id, s.name;",
-  "input_tokens": 647,
+  "timestamp": "2026-09-13T18:01:00.173432+00:00",
+  "prompt_chars": 2454,
+  "output": "SELECT s.name, COUNT(CASE WHEN t.start_station_id = s.station_id THEN 1 END) as trips_started, COUNT(CASE WHEN t.end_station_id = s.station_id THEN 1 END) as trips_ended FROM station s LEFT JOIN trip t ON s.station_id = t.start_station_id OR s.station_id = t.end_station_id GROUP BY s.station_id, s.name;",
+  "input_tokens": 651,
   "output_tokens": 116,
   "error": null,
-  "latency_ms": 1526.8
+  "latency_ms": 1672.3
 }

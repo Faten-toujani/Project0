@@ -4,11 +4,11 @@
   "split": "test",
   "model_key": "opus",
   "model_name": "claude-opus-5",
-  "timestamp": "2026-09-13T14:11:11.153822+00:00",
-  "prompt_chars": 2424,
-  "output": "```sql\nSELECT m.name, SUM(t.distance_km) AS total_distance\nFROM trip t\nJOIN bike b ON t.bike_id = b.bike_id\nJOIN model m ON b.model_id = m.model_id\nGROUP BY m.model_id, m.name\nORDER BY total_distance DESC\nLIMIT 3\n```",
-  "input_tokens": 1144,
-  "output_tokens": 121,
+  "timestamp": "2026-09-13T17:58:58.162697+00:00",
+  "prompt_chars": 2400,
+  "output": "SELECT member_id, SUM(amount) AS total_paid FROM payment GROUP BY member_id HAVING SUM(amount) > 300;",
+  "input_tokens": 1139,
+  "output_tokens": 52,
   "error": null,
-  "latency_ms": 2354.3
+  "latency_ms": 2245.0
 }

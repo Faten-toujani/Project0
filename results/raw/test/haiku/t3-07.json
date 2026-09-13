@@ -4,11 +4,11 @@
   "split": "test",
   "model_key": "haiku",
   "model_name": "claude-haiku-4-5-20251001",
-  "timestamp": "2026-09-13T14:12:44.866725+00:00",
-  "prompt_chars": 2388,
-  "output": "SELECT name, capacity FROM station ORDER BY capacity DESC LIMIT 1 OFFSET 1;",
-  "input_tokens": 638,
-  "output_tokens": 23,
+  "timestamp": "2026-09-13T18:01:06.580383+00:00",
+  "prompt_chars": 2499,
+  "output": "SELECT s.name, MAX(CAST((julianday(m.resolved_on) - julianday(m.reported_on)) AS INTEGER)) as longest_days\nFROM station s\nJOIN bike b ON s.station_id = b.station_id\nJOIN maintenance m ON b.bike_id = m.bike_id\nWHERE m.resolved_on IS NOT NULL\nGROUP BY s.station_id, s.name\nHAVING COUNT(m.maint_id) > 0;",
+  "input_tokens": 656,
+  "output_tokens": 115,
   "error": null,
-  "latency_ms": 902.5
+  "latency_ms": 1565.5
 }

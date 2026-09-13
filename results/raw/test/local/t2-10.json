@@ -4,11 +4,11 @@
   "split": "test",
   "model_key": "local",
   "model_name": "qwen2.5-coder:3b",
-  "timestamp": "2026-09-13T14:14:24.147645+00:00",
-  "prompt_chars": 2391,
-  "output": "SELECT T2.name FROM trip AS T1 INNER JOIN station AS T2 ON T1.start_station_id = T2.station_id GROUP BY T2.name ORDER BY COUNT(T1.trip_id) DESC LIMIT 1",
-  "input_tokens": 531,
-  "output_tokens": 44,
+  "timestamp": "2026-09-13T18:02:50.026893+00:00",
+  "prompt_chars": 2396,
+  "output": "SELECT method, COUNT(payment_id) AS num_payments, SUM(amount) AS total_amount FROM payment GROUP BY method",
+  "input_tokens": 533,
+  "output_tokens": 23,
   "error": null,
-  "latency_ms": 3621.0
+  "latency_ms": 3075.6
 }

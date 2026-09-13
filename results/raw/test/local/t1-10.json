@@ -4,11 +4,11 @@
   "split": "test",
   "model_key": "local",
   "model_name": "qwen2.5-coder:3b",
-  "timestamp": "2026-09-13T14:13:21.384820+00:00",
-  "prompt_chars": 2344,
-  "output": "SELECT COUNT(member_id) FROM member WHERE city = 'Toulouse'",
-  "input_tokens": 523,
-  "output_tokens": 15,
+  "timestamp": "2026-09-13T18:02:15.649693+00:00",
+  "prompt_chars": 2375,
+  "output": "SELECT MAX(battery_wh) FROM model WHERE is_electric = 1",
+  "input_tokens": 527,
+  "output_tokens": 16,
   "error": null,
-  "latency_ms": 2885.4
+  "latency_ms": 2977.6
 }

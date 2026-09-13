@@ -4,11 +4,11 @@
   "split": "test",
   "model_key": "haiku",
   "model_name": "claude-haiku-4-5-20251001",
-  "timestamp": "2026-09-13T14:12:01.202110+00:00",
+  "timestamp": "2026-09-13T18:00:32.094691+00:00",
   "prompt_chars": 2372,
   "output": "SELECT name FROM station WHERE city = 'Lyon' ORDER BY name ASC;",
   "input_tokens": 636,
   "output_tokens": 20,
   "error": null,
-  "latency_ms": 745.3
+  "latency_ms": 1169.8
 }

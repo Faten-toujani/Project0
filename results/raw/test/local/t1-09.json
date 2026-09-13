@@ -4,11 +4,11 @@
   "split": "test",
   "model_key": "local",
   "model_name": "qwen2.5-coder:3b",
-  "timestamp": "2026-09-13T14:13:18.261306+00:00",
-  "prompt_chars": 2362,
-  "output": "SELECT COUNT(bike_id) FROM bike WHERE purchased_on < '2024-01-01'",
-  "input_tokens": 530,
-  "output_tokens": 25,
+  "timestamp": "2026-09-13T18:02:12.646683+00:00",
+  "prompt_chars": 2390,
+  "output": "SELECT trip_id, distance_km FROM trip ORDER BY distance_km DESC LIMIT 5",
+  "input_tokens": 533,
+  "output_tokens": 17,
   "error": null,
-  "latency_ms": 3122.7
+  "latency_ms": 3001.9
 }

@@ -4,11 +4,11 @@
   "split": "test",
   "model_key": "local",
   "model_name": "qwen2.5-coder:3b",
-  "timestamp": "2026-09-13T14:13:56.909187+00:00",
-  "prompt_chars": 2385,
-  "output": "SELECT p.name, SUM(p.amount) AS total_amount\nFROM payment p\nJOIN member m ON p.member_id = m.member_id\nJOIN plan pl ON m.plan_id = pl.plan_id\nGROUP BY p.name",
-  "input_tokens": 532,
-  "output_tokens": 45,
+  "timestamp": "2026-09-13T18:02:21.998589+00:00",
+  "prompt_chars": 2479,
+  "output": "SELECT p.name, COALESCE(SUM(pmt.amount), 0) AS total_paid\nFROM plan p\nLEFT JOIN payment pmt ON p.plan_id = pmt.plan_id\nGROUP BY p.name",
+  "input_tokens": 553,
+  "output_tokens": 44,
   "error": null,
-  "latency_ms": 3584.8
+  "latency_ms": 3570.5
 }

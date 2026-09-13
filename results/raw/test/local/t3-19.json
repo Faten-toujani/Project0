@@ -1,0 +1,14 @@
+{
+  "item_id": "t3-19",
+  "tier": 3,
+  "split": "test",
+  "model_key": "local",
+  "model_name": "qwen2.5-coder:3b",
+  "timestamp": "2026-09-13T18:04:21.668503+00:00",
+  "prompt_chars": 2512,
+  "output": "SELECT m.manufacturer, m.name, COUNT(*) AS trip_count\nFROM model m\nJOIN bike b ON m.model_id = b.model_id\nJOIN trip t ON b.bike_id = t.bike_id\nGROUP BY m.manufacturer, m.name\nORDER BY m.manufacturer, trip_count DESC",
+  "input_tokens": 554,
+  "output_tokens": 63,
+  "error": null,
+  "latency_ms": 4056.5
+}

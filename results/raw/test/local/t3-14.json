@@ -1,0 +1,14 @@
+{
+  "item_id": "t3-14",
+  "tier": 3,
+  "split": "test",
+  "model_key": "local",
+  "model_name": "qwen2.5-coder:3b",
+  "timestamp": "2026-09-13T18:03:59.994653+00:00",
+  "prompt_chars": 2437,
+  "output": "SELECT T1.member_id, T2.member_id FROM member AS T1 INNER JOIN member AS T2 ON T1.referred_by = T2.member_id WHERE T1.city = T2.city",
+  "input_tokens": 543,
+  "output_tokens": 41,
+  "error": null,
+  "latency_ms": 3594.2
+}

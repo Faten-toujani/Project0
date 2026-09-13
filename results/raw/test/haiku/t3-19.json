@@ -1,0 +1,14 @@
+{
+  "item_id": "t3-19",
+  "tier": 3,
+  "split": "test",
+  "model_key": "haiku",
+  "model_name": "claude-haiku-4-5-20251001",
+  "timestamp": "2026-09-13T18:01:24.164220+00:00",
+  "prompt_chars": 2512,
+  "output": "SELECT m.manufacturer, m.name, COUNT(t.trip_id) as trip_count\nFROM model m\nLEFT JOIN bike b ON m.model_id = b.model_id\nLEFT JOIN trip t ON b.bike_id = t.bike_id\nGROUP BY m.model_id, m.manufacturer, m.name\nHAVING COUNT(t.trip_id) >= (\n    SELECT COUNT(t2.trip_id)\n    FROM model m2\n    LEFT JOIN bike b2 ON m2.model_id = b2.model_id\n    LEFT JOIN trip t2 ON b2.bike_id = t2.bike_id\n    WHERE m2.manufacturer = m.manufacturer\n    GROUP BY m2.model_id\n    ORDER BY COUNT(t2.trip_id) DESC, m2.name ASC\n    LIMIT 1 OFFSET 1\n)\nORDER BY m.manufacturer ASC, trip_count DESC, m.name ASC;",
+  "input_tokens": 663,
+  "output_tokens": 228,
+  "error": null,
+  "latency_ms": 2559.9
+}

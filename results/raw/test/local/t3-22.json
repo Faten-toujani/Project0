@@ -1,0 +1,14 @@
+{
+  "item_id": "t3-22",
+  "tier": 3,
+  "split": "test",
+  "model_key": "local",
+  "model_name": "qwen2.5-coder:3b",
+  "timestamp": "2026-09-13T18:04:32.489138+00:00",
+  "prompt_chars": 2478,
+  "output": "SELECT issue, ROUND(AVG(julianday(resolved_on) - julianday(reported_on)), 2) AS avg_resolution_days\nFROM maintenance\nWHERE resolved_on IS NOT NULL\nGROUP BY issue\nORDER BY avg_resolution_days DESC\nLIMIT 1",
+  "input_tokens": 545,
+  "output_tokens": 56,
+  "error": null,
+  "latency_ms": 3866.9
+}

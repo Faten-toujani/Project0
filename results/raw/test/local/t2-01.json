@@ -4,11 +4,11 @@
   "split": "test",
   "model_key": "local",
   "model_name": "qwen2.5-coder:3b",
-  "timestamp": "2026-09-13T14:13:53.523702+00:00",
-  "prompt_chars": 2436,
+  "timestamp": "2026-09-13T18:02:18.627901+00:00",
+  "prompt_chars": 2455,
   "output": "SELECT s.name, COUNT(b.bike_id) AS bike_count\nFROM station s\nLEFT JOIN bike b ON s.station_id = b.station_id\nGROUP BY s.station_id",
-  "input_tokens": 540,
+  "input_tokens": 547,
   "output_tokens": 37,
   "error": null,
-  "latency_ms": 3383.9
+  "latency_ms": 3370.0
 }

@@ -4,11 +4,11 @@
   "split": "test",
   "model_key": "haiku",
   "model_name": "claude-haiku-4-5-20251001",
-  "timestamp": "2026-09-13T14:12:24.223739+00:00",
+  "timestamp": "2026-09-13T18:00:47.963602+00:00",
   "prompt_chars": 2386,
   "output": "SELECT city, COUNT(*) as station_count FROM station GROUP BY city HAVING COUNT(*) > 2;",
   "input_tokens": 640,
   "output_tokens": 27,
   "error": null,
-  "latency_ms": 839.0
+  "latency_ms": 850.9
 }

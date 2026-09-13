@@ -1,0 +1,14 @@
+{
+  "item_id": "t3-12",
+  "tier": 3,
+  "split": "test",
+  "model_key": "local",
+  "model_name": "qwen2.5-coder:3b",
+  "timestamp": "2026-09-13T18:03:53.696336+00:00",
+  "prompt_chars": 2392,
+  "output": "SELECT bike_id FROM maintenance WHERE resolved_on IS NULL ORDER BY reported_on DESC LIMIT 1",
+  "input_tokens": 530,
+  "output_tokens": 19,
+  "error": null,
+  "latency_ms": 3009.7
+}

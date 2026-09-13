@@ -1,0 +1,14 @@
+{
+  "item_id": "t3-15",
+  "tier": 3,
+  "split": "test",
+  "model_key": "local",
+  "model_name": "qwen2.5-coder:3b",
+  "timestamp": "2026-09-13T18:04:03.589969+00:00",
+  "prompt_chars": 2507,
+  "output": "SELECT T2.city, T1.member_id, COUNT(*) AS trip_count\nFROM trip AS T1\nJOIN member AS T2 ON T1.member_id = T2.member_id\nJOIN station AS T3 ON T1.start_station_id = T3.station_id\nGROUP BY T2.city, T1.member_id\nORDER BY T2.city, trip_count ASC, T1.member_id ASC",
+  "input_tokens": 559,
+  "output_tokens": 82,
+  "error": null,
+  "latency_ms": 4455.5
+}

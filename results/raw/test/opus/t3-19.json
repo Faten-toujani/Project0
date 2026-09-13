@@ -1,0 +1,14 @@
+{
+  "item_id": "t3-19",
+  "tier": 3,
+  "split": "test",
+  "model_key": "opus",
+  "model_name": "claude-opus-5",
+  "timestamp": "2026-09-13T18:00:10.620536+00:00",
+  "prompt_chars": 2512,
+  "output": "WITH model_trips AS (\n    SELECT m.manufacturer AS manufacturer,\n           m.name AS model_name,\n           COUNT(t.trip_id) AS trip_count\n    FROM model m\n    JOIN bike b ON b.model_id = m.model_id\n    JOIN trip t ON t.bike_id = b.bike_id\n    GROUP BY m.model_id, m.manufacturer, m.name\n),\nranked AS (\n    SELECT manufacturer,\n           model_name,\n           trip_count,\n           ROW_NUMBER() OVER (PARTITION BY manufacturer ORDER BY trip_count DESC, model_name ASC) AS rn\n    FROM model_trips\n)\nSELECT manufacturer, model_name, trip_count\nFROM ranked\nWHERE rn <= 2\nORDER BY manufacturer ASC, trip_count DESC, model_name ASC;",
+  "input_tokens": 1175,
+  "output_tokens": 347,
+  "error": null,
+  "latency_ms": 4169.6
+}

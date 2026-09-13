@@ -4,11 +4,11 @@
   "split": "test",
   "model_key": "local",
   "model_name": "qwen2.5-coder:3b",
-  "timestamp": "2026-09-13T14:15:27.198582+00:00",
-  "prompt_chars": 2406,
-  "output": "SELECT member_id FROM member WHERE member_id NOT IN (SELECT member_id FROM trip) AND member_id IN (SELECT member_id FROM payment)",
-  "input_tokens": 536,
-  "output_tokens": 29,
+  "timestamp": "2026-09-13T18:03:38.619425+00:00",
+  "prompt_chars": 2445,
+  "output": "SELECT m.member_id, m.full_name FROM member m\nJOIN trip t ON m.member_id = t.member_id\nWHERE strftime('%Y', m.joined_on) = '2024'\n  AND t.started_at > datetime(m.joined_on, '+120 days')",
+  "input_tokens": 549,
+  "output_tokens": 60,
   "error": null,
-  "latency_ms": 3296.9
+  "latency_ms": 3989.3
 }

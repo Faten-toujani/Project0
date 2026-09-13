@@ -1,0 +1,14 @@
+{
+  "item_id": "t3-24",
+  "tier": 3,
+  "split": "test",
+  "model_key": "local",
+  "model_name": "qwen2.5-coder:3b",
+  "timestamp": "2026-09-13T18:04:40.095844+00:00",
+  "prompt_chars": 2504,
+  "output": "SELECT T1.city, SUM(T2.cost) AS total_resolved_cost\nFROM station AS T1\nLEFT JOIN maintenance AS T2 ON T1.station_id = T2.bike_id\nGROUP BY T1.city",
+  "input_tokens": 556,
+  "output_tokens": 46,
+  "error": null,
+  "latency_ms": 3758.8
+}
