@@ -86,4 +86,4 @@ results/  raw/ (one JSON per call), per_item.csv, summary.csv, hardware.md
 
 ## Contributions
 
-Solo project 
+
